@@ -3,158 +3,1203 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sarbojayi Tourism - Trusted Tour Operator for Domestic, International, Group, Honeymoon, Corporate and Customized Tours.">
+
 <title>Sarbojayi Tourism | Trusted Tour Operator</title>
+
+<meta name="description" content="Sarbojayi Tourism – Trusted Tour Operator from Kolkata. Personal, Group, Honeymoon, Corporate and Customized Tours across India and International destinations.">
+
+<meta name="theme-color" content="#071b2f">
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,Helvetica,sans-serif;color:#172033;background:#fff;line-height:1.6}
-a{text-decoration:none;color:inherit}
-.container{width:min(1120px,92%);margin:auto}
-header{position:sticky;top:0;z-index:1000;background:#fff;box-shadow:0 2px 14px #0001}
-.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px}
-.logo-placeholder{width:52px;height:52px;border:2px dashed #bbb;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:11px;text-align:center;color:#777}
-.brand strong{display:block;font-size:20px;letter-spacing:.4px}
-.brand small{color:#777}
-nav{display:flex;gap:20px;align-items:center}
-nav a{font-weight:600;font-size:14px}
-.cta{background:#0b6b57;color:#fff;padding:11px 17px;border-radius:25px}
-.hero{min-height:650px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,#071d28dd,#071d2866),url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85') center/cover}
-.hero-content{max-width:700px;padding:80px 0}
-.kicker{text-transform:uppercase;letter-spacing:3px;font-weight:700;font-size:13px}
-h1{font-size:clamp(42px,7vw,76px);line-height:1.02;margin:15px 0}
-.hero p{font-size:20px;max-width:650px;color:#f2f5f6}
-.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
-.btn{display:inline-block;padding:13px 22px;border-radius:28px;font-weight:700}
-.btn-primary{background:#fff;color:#0b6b57}
-.btn-secondary{border:1px solid #fff;color:#fff}
-section{padding:78px 0}
-.section-title{text-align:center;max-width:720px;margin:0 auto 40px}
-.section-title h2{font-size:38px;margin-bottom:10px}
-.section-title p{color:#687180}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:#fff;border-radius:18px;padding:28px;box-shadow:0 8px 30px #13223812;border:1px solid #eef0f3}
-.card .icon{font-size:30px;margin-bottom:10px}
-.card h3{margin-bottom:8px}
-.card p{color:#687180}
-.destinations{background:#f6f8f7}
-.destination-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.destination{min-height:210px;border-radius:18px;overflow:hidden;position:relative;color:#fff;background-size:cover;background-position:center;display:flex;align-items:end}
-.destination div{width:100%;padding:22px;background:linear-gradient(transparent,#000b)}
-.destination h3{font-size:22px}
-.why{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
-.why-box{background:#f7faf9;border-radius:24px;padding:35px}
-.check{margin:14px 0;font-weight:600}
-.contact{background:#0b6b57;color:#fff}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
-.contact-card{background:#ffffff12;border:1px solid #ffffff2b;padding:28px;border-radius:18px}
-.contact-card p{margin:10px 0}
-.contact-card a{text-decoration:underline}
-footer{background:#071d28;color:#dbe4e7;padding:28px 0}
-.footer-flex{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:850px){
-nav{display:none}.cards{grid-template-columns:1fr 1fr}.destination-grid{grid-template-columns:1fr 1fr}.why,.contact-grid{grid-template-columns:1fr}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
-@media(max-width:560px){
-.hero{min-height:600px}.cards,.destination-grid{grid-template-columns:1fr}section{padding:58px 0}.section-title h2{font-size:30px}.brand strong{font-size:16px}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#17202a;
+    background:#f7f9fc;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:92%;
+    max-width:1180px;
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(7,27,47,0.97);
+    backdrop-filter:blur(10px);
+    box-shadow:0 4px 20px rgba(0,0,0,0.15);
+}
+
+.navbar{
+    min-height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+/* LOGO PLACEHOLDER - LOGO CAN BE ADDED LATER */
+
+.logo-placeholder{
+    width:52px;
+    height:52px;
+    border:2px solid #d8b15a;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#d8b15a;
+    font-size:9px;
+    font-weight:bold;
+    line-height:1.1;
+}
+
+.brand-text h2{
+    color:#fff;
+    font-size:18px;
+    letter-spacing:1px;
+}
+
+.brand-text span{
+    color:#d8b15a;
+    font-size:11px;
+    letter-spacing:1.5px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#d8b15a;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:650px;
+    position:relative;
+    overflow:hidden;
+    background:
+    linear-gradient(135deg,#061525 0%,#0b3048 45%,#11636c 100%);
+    display:flex;
+    align-items:center;
+}
+
+.hero:after{
+    content:"";
+    position:absolute;
+    width:650px;
+    height:650px;
+    right:-180px;
+    top:-150px;
+    border-radius:50%;
+    background:rgba(216,177,90,0.12);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:760px;
+    color:#fff;
+    padding:80px 0;
+}
+
+.hero-tag{
+    display:inline-block;
+    padding:8px 16px;
+    border:1px solid rgba(216,177,90,0.7);
+    border-radius:30px;
+    color:#f1cf78;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:1.5px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:clamp(42px,7vw,78px);
+    line-height:1.02;
+    letter-spacing:-2px;
+    margin-bottom:18px;
+}
+
+.hero h1 span{
+    color:#f1cf78;
+}
+
+.hero p{
+    max-width:650px;
+    color:#dce8ed;
+    font-size:19px;
+    margin-bottom:32px;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:14px 24px;
+    border-radius:8px;
+    font-weight:bold;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:#d8b15a;
+    color:#071b2f;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+    background:#f1cf78;
+}
+
+.btn-outline{
+    border:1px solid rgba(255,255,255,0.5);
+    color:#fff;
+}
+
+.btn-outline:hover{
+    background:#fff;
+    color:#071b2f;
+}
+
+.hero-stats{
+    display:flex;
+    gap:40px;
+    margin-top:55px;
+    flex-wrap:wrap;
+}
+
+.stat strong{
+    display:block;
+    font-size:25px;
+    color:#f1cf78;
+}
+
+.stat span{
+    color:#d5e1e6;
+    font-size:12px;
+}
+
+/* ================= SECTION ================= */
+
+section{
+    padding:85px 0;
+}
+
+.section-heading{
+    text-align:center;
+    max-width:720px;
+    margin:0 auto 45px;
+}
+
+.section-heading small{
+    color:#b18a32;
+    font-weight:bold;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.section-heading h2{
+    font-size:38px;
+    color:#10263a;
+    margin:10px 0;
+}
+
+.section-heading p{
+    color:#697681;
+}
+
+/* ================= SERVICES ================= */
+
+.services{
+    background:#fff;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:18px;
+}
+
+.service-card{
+    padding:28px 20px;
+    border-radius:14px;
+    background:#f7f9fc;
+    border:1px solid #e5ebef;
+    text-align:center;
+    transition:0.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 15px 35px rgba(7,27,47,0.1);
+    border-color:#d8b15a;
+}
+
+.service-icon{
+    width:60px;
+    height:60px;
+    margin:0 auto 17px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#eaf5f5;
+    font-size:27px;
+}
+
+.service-card h3{
+    color:#12283b;
+    font-size:17px;
+    margin-bottom:8px;
+}
+
+.service-card p{
+    color:#74808a;
+    font-size:13px;
+}
+
+/* ================= DESTINATIONS ================= */
+
+.destination-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:18px;
+}
+
+.destination{
+    min-height:300px;
+    border-radius:18px;
+    overflow:hidden;
+    position:relative;
+    display:flex;
+    align-items:flex-end;
+    background:linear-gradient(145deg,#0b3048,#15908e);
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);
+}
+
+.destination:nth-child(2){
+    background:linear-gradient(145deg,#233c65,#6d9fbd);
+}
+
+.destination:nth-child(3){
+    background:linear-gradient(145deg,#183d52,#b98442);
+}
+
+.destination:nth-child(4){
+    background:linear-gradient(145deg,#334f43,#8bb8a1);
+}
+
+.destination:nth-child(5){
+    background:linear-gradient(145deg,#164d62,#d39c53);
+}
+
+.destination-content{
+    width:100%;
+    padding:25px 20px;
+    color:#fff;
+    background:linear-gradient(transparent,rgba(0,0,0,0.8));
+}
+
+.destination-content h3{
+    font-size:22px;
+    margin-bottom:5px;
+}
+
+.destination-content p{
+    font-size:12px;
+    color:#e4eeee;
+}
+
+/* ================= WHY US ================= */
+
+.why-us{
+    background:#eef5f6;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.why-card{
+    background:#fff;
+    padding:30px 22px;
+    border-radius:15px;
+    border-bottom:4px solid #d8b15a;
+}
+
+.why-number{
+    color:#d8b15a;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.why-card h3{
+    color:#10263a;
+    margin:8px 0;
+}
+
+.why-card p{
+    color:#6f7c85;
+    font-size:14px;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    background:linear-gradient(135deg,#071b2f,#0c5360);
+    color:#fff;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.cta p{
+    color:#dce8ed;
+    max-width:650px;
+    margin:0 auto 28px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:#fff;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:start;
+}
+
+.contact-info h2{
+    font-size:34px;
+    color:#10263a;
+    margin-bottom:15px;
+}
+
+.contact-info>p{
+    color:#687680;
+    margin-bottom:28px;
+}
+
+.contact-item{
+    display:flex;
+    gap:15px;
+    margin:20px 0;
+}
+
+.contact-icon{
+    width:45px;
+    height:45px;
+    flex-shrink:0;
+    border-radius:10px;
+    background:#eaf5f5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+}
+
+.contact-item h4{
+    color:#10263a;
+}
+
+.contact-item p{
+    color:#687680;
+    font-size:14px;
+}
+
+.contact-box{
+    background:#f6f8fa;
+    padding:30px;
+    border-radius:18px;
+    border:1px solid #e4eaee;
+}
+
+.contact-box h3{
+    color:#10263a;
+    margin-bottom:20px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width:100%;
+    padding:13px 15px;
+    border:1px solid #d8e0e5;
+    border-radius:8px;
+    font-family:inherit;
+    outline:none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+    border-color:#0b7180;
+}
+
+.form-group textarea{
+    min-height:110px;
+    resize:vertical;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#061522;
+    color:#fff;
+    padding:45px 0 20px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr;
+    gap:40px;
+}
+
+footer h3{
+    margin-bottom:14px;
+    color:#f1cf78;
+}
+
+footer p,
+footer a{
+    color:#b7c5cc;
+    font-size:13px;
+}
+
+footer a:hover{
+    color:#f1cf78;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.1);
+    margin-top:35px;
+    padding-top:20px;
+    text-align:center;
+    color:#8da0aa;
+    font-size:12px;
+}
+
+/* ================= FLOATING BUTTONS ================= */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25d366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:26px;
+    z-index:999;
+    box-shadow:0 8px 25px rgba(0,0,0,0.25);
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+    nav{
+        display:none;
+    }
+
+    .service-grid,
+    .destination-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .hero{
+        min-height:620px;
+    }
+
+    .hero h1{
+        font-size:46px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .hero-stats{
+        gap:25px;
+    }
+
+    section{
+        padding:65px 0;
+    }
+
+    .section-heading h2{
+        font-size:30px;
+    }
+
+    .service-grid,
+    .destination-grid,
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .destination{
+        min-height:250px;
+    }
+
+    .cta h2{
+        font-size:31px;
+    }
+
+    .btn{
+        width:100%;
+    }
 }
 </style>
 </head>
+
 <body>
 
+<!-- ================= HEADER ================= -->
+
 <header>
-<div class="container nav">
-<a class="brand" href="#home">
-<div class="logo-placeholder">LOGO<br>HERE</div>
-<div><strong>SARBOJAYI TOURISM</strong><small>A unit of SARBOJAYI GROUP</small></div>
-</a>
-<nav>
-<a href="#home">Home</a><a href="#tours">Tours</a><a href="#destinations">Destinations</a><a href="#about">Why Us</a><a href="#contact" class="cta">Contact</a>
-</nav>
+<div class="container navbar">
+
+    <a href="#home" class="brand">
+
+        <!-- LOGO CAN BE ADDED HERE LATER -->
+        <div class="logo-placeholder">
+            LOGO<br>HERE
+        </div>
+
+        <div class="brand-text">
+            <h2>SARBOJAYI TOURISM</h2>
+            <span>A UNIT OF SARBOJAYI GROUP</span>
+        </div>
+
+    </a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
 </div>
 </header>
 
-<main>
+
+<!-- ================= HERO ================= -->
+
 <section class="hero" id="home">
-<div class="container hero-content">
-<div class="kicker">Trusted Tour Operator</div>
-<h1>Travel More.<br>Experience More.</h1>
-<p>Beautiful journeys, thoughtfully planned. Explore North Bengal, India and international destinations with Sarbojayi Tourism.</p>
-<div class="buttons">
-<a class="btn btn-primary" href="tel:+918100360030">Call 8100360030</a>
-<a class="btn btn-secondary" href="https://wa.me/918100360030">WhatsApp Us</a>
+
+<div class="container">
+
+<div class="hero-content">
+
+    <div class="hero-tag">
+        TRUSTED TOUR OPERATOR
+    </div>
+
+    <h1>
+        Explore More.<br>
+        <span>Travel Better.</span>
+    </h1>
+
+    <p>
+        Discover unforgettable journeys with Sarbojayi Tourism.
+        From personalized holidays to group adventures,
+        we create travel experiences designed around you.
+    </p>
+
+    <div class="hero-buttons">
+
+        <a href="#contact" class="btn btn-primary">
+            Plan Your Trip
+        </a>
+
+        <a href="https://wa.me/918100360030"
+           target="_blank"
+           class="btn btn-outline">
+            WhatsApp Us
+        </a>
+
+    </div>
+
+    <div class="hero-stats">
+
+        <div class="stat">
+            <strong>24/7</strong>
+            <span>Support & Guidance</span>
+        </div>
+
+        <div class="stat">
+            <strong>Pan India</strong>
+            <span>Travel Coverage</span>
+        </div>
+
+        <div class="stat">
+            <strong>Custom</strong>
+            <span>Tour Planning</span>
+        </div>
+
+    </div>
+
 </div>
+
 </div>
 </section>
 
-<section id="tours">
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services" id="services">
+
 <div class="container">
-<div class="section-title"><h2>Our Tour Services</h2><p>Choose a travel style that suits you. We can also customize your complete tour plan.</p></div>
-<div class="cards">
-<div class="card"><div class="icon">🧳</div><h3>Domestic Tours</h3><p>Discover beautiful destinations across India with comfortable, planned itineraries.</p></div>
-<div class="card"><div class="icon">🌍</div><h3>International Tours</h3><p>Plan memorable international holidays with itinerary and travel support.</p></div>
-<div class="card"><div class="icon">👥</div><h3>Group Tours</h3><p>Well-planned group travel for families, friends, students and organizations.</p></div>
-<div class="card"><div class="icon">💍</div><h3>Honeymoon Tours</h3><p>Romantic journeys designed around your preferred destination and budget.</p></div>
-<div class="card"><div class="icon">🏢</div><h3>Corporate Tours</h3><p>Travel solutions for corporate groups, meetings, outings and team trips.</p></div>
-<div class="card"><div class="icon">🗺️</div><h3>Customized Tours</h3><p>Your dates, your budget, your destinations—we help build the plan around you.</p></div>
+
+<div class="section-heading">
+
+    <small>Our Services</small>
+
+    <h2>Travel Your Way</h2>
+
+    <p>
+        Whether you are travelling with family, friends,
+        your partner or your organization — we create
+        the right travel plan for you.
+    </p>
+
 </div>
+
+<div class="service-grid">
+
+    <div class="service-card">
+        <div class="service-icon">✈️</div>
+        <h3>Personal Tour</h3>
+        <p>Flexible holidays planned around your preferences.</p>
+    </div>
+
+    <div class="service-card">
+        <div class="service-icon">👨‍👩‍👧‍👦</div>
+        <h3>Group Tour</h3>
+        <p>Comfortable and organized group travel experiences.</p>
+    </div>
+
+    <div class="service-card">
+        <div class="service-icon">💍</div>
+        <h3>Honeymoon</h3>
+        <p>Special journeys for beautiful memories together.</p>
+    </div>
+
+    <div class="service-card">
+        <div class="service-icon">🏢</div>
+        <h3>Corporate</h3>
+        <p>Professional travel solutions for businesses.</p>
+    </div>
+
+    <div class="service-card">
+        <div class="service-icon">🧭</div>
+        <h3>Customized</h3>
+        <p>Your destination, your budget, your itinerary.</p>
+    </div>
+
+</div>
+
 </div>
 </section>
 
-<section class="destinations" id="destinations">
+
+<!-- ================= DESTINATIONS ================= -->
+
+<section id="destinations">
+
 <div class="container">
-<div class="section-title"><h2>Explore Beautiful Destinations</h2><p>From the hills of North Bengal to unforgettable journeys across India and beyond.</p></div>
+
+<div class="section-heading">
+
+    <small>Explore India</small>
+
+    <h2>Popular Destinations</h2>
+
+    <p>
+        From Himalayan landscapes to tropical islands,
+        discover destinations worth remembering.
+    </p>
+
+</div>
+
 <div class="destination-grid">
-<div class="destination" style="background-image:url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80')"><div><h3>Darjeeling</h3><p>North Bengal</p></div></div>
-<div class="destination" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80')"><div><h3>North Bengal</h3><p>Offbeat escapes</p></div></div>
-<div class="destination" style="background-image:url('https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=80')"><div><h3>Mountain & Nature</h3><p>India</p></div></div>
-<div class="destination" style="background-image:url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=900&q=80')"><div><h3>International</h3><p>Explore the world</p></div></div>
+
+    <div class="destination">
+        <div class="destination-content">
+            <h3>Darjeeling & Sikkim</h3>
+            <p>Mountains • Tea Gardens • Monasteries</p>
+        </div>
+    </div>
+
+    <div class="destination">
+        <div class="destination-content">
+            <h3>North Bengal</h3>
+            <p>Offbeat • Nature • Homestays</p>
+        </div>
+    </div>
+
+    <div class="destination">
+        <div class="destination-content">
+            <h3>Kashmir</h3>
+            <p>Valleys • Lakes • Mountains</p>
+        </div>
+    </div>
+
+    <div class="destination">
+        <div class="destination-content">
+            <h3>Manali</h3>
+            <p>Snow • Adventure • Himalayan Views</p>
+        </div>
+    </div>
+
+    <div class="destination">
+        <div class="destination-content">
+            <h3>Andaman</h3>
+            <p>Beaches • Islands • Blue Waters</p>
+        </div>
+    </div>
+
 </div>
+
 </div>
 </section>
 
-<section id="about">
-<div class="container why">
-<div>
-<div class="section-title" style="text-align:left;margin:0 0 20px"><h2>Why Travel With Sarbojayi?</h2><p>We focus on genuine service, practical planning and support throughout your journey.</p></div>
-<div class="check">✓ Genuine & trusted travel support</div>
-<div class="check">✓ Budget-friendly and premium options</div>
-<div class="check">✓ Personalized & customized tour planning</div>
-<div class="check">✓ Family, couple, corporate, solo & student groups</div>
-<div class="check">✓ 24/7 support and guidance</div>
+
+<!-- ================= WHY US ================= -->
+
+<section class="why-us" id="why">
+
+<div class="container">
+
+<div class="section-heading">
+
+    <small>Why Sarbojayi</small>
+
+    <h2>Travel With Confidence</h2>
+
+    <p>
+        We believe that a great journey starts with
+        genuine service and proper guidance.
+    </p>
+
 </div>
-<div class="why-box">
-<h3>Plan Your Next Journey</h3>
-<p style="margin:12px 0 22px;color:#687180">Tell us your destination, dates, group size and approximate budget. We will help you shape the itinerary.</p>
-<a class="btn cta" href="tel:+918100360030">Talk to Us</a>
+
+<div class="why-grid">
+
+    <div class="why-card">
+        <span class="why-number">01</span>
+        <h3>Genuine & Trusted</h3>
+        <p>
+            Transparent communication and dependable
+            travel assistance.
+        </p>
+    </div>
+
+    <div class="why-card">
+        <span class="why-number">02</span>
+        <h3>Budget Friendly</h3>
+        <p>
+            Travel plans designed according to your
+            requirements and budget.
+        </p>
+    </div>
+
+    <div class="why-card">
+        <span class="why-number">03</span>
+        <h3>Premium Service</h3>
+        <p>
+            Carefully planned travel experiences with
+            attention to important details.
+        </p>
+    </div>
+
+    <div class="why-card">
+        <span class="why-number">04</span>
+        <h3>24/7 Support</h3>
+        <p>
+            Assistance and guidance whenever you
+            need us during your journey.
+        </p>
+    </div>
+
 </div>
+
 </div>
 </section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<div class="container">
+
+    <h2>Your Journey Starts Here.</h2>
+
+    <p>
+        Tell us where you want to go, how you want to travel,
+        and what your budget is. We will help you create
+        a customized travel plan.
+    </p>
+
+    <a href="#contact" class="btn btn-primary">
+        Customize Your Tour
+    </a>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
 
 <section class="contact" id="contact">
+
 <div class="container">
-<div class="section-title" style="color:#fff"><h2>Contact Sarbojayi Tourism</h2><p style="color:#dcebe7">We are ready to help you plan your next journey.</p></div>
+
 <div class="contact-grid">
-<div class="contact-card">
-<h3>Call & WhatsApp</h3><p><a href="tel:+918100360030">8100360030</a></p>
-<h3 style="margin-top:20px">Office</h3><p><a href="tel:+913335764303">033-35764303</a></p>
+
+    <div class="contact-info">
+
+        <h2>Let's Plan Your Next Journey</h2>
+
+        <p>
+            Get in touch with Sarbojayi Tourism for
+            customized tour planning and travel assistance.
+        </p>
+
+        <div class="contact-item">
+
+            <div class="contact-icon">📞</div>
+
+            <div>
+                <h4>Call & WhatsApp</h4>
+                <p>
+                    <a href="tel:+918100360030">
+                        +91 8100360030
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="contact-item">
+
+            <div class="contact-icon">☎️</div>
+
+            <div>
+                <h4>Office</h4>
+                <p>
+                    <a href="tel:+913335764303">
+                        +91 33 3576 4303
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="contact-item">
+
+            <div class="contact-icon">🚨</div>
+
+            <div>
+                <h4>Emergency Support</h4>
+                <p>
+                    <a href="tel:+918013967348">
+                        +91 8013967348
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="contact-item">
+
+            <div class="contact-icon">✉️</div>
+
+            <div>
+                <h4>Email</h4>
+                <p>
+                    <a href="mailto:sarbojayitourism@gmail.com">
+                        sarbojayitourism@gmail.com
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="contact-item">
+
+            <div class="contact-icon">📍</div>
+
+            <div>
+                <h4>Registered Office</h4>
+                <p>
+                    Narendra Pur, Kolkata – 700103,
+                    West Bengal, India
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="contact-box">
+
+        <h3>Quick Tour Enquiry</h3>
+
+        <form onsubmit="sendWhatsApp(event)">
+
+            <div class="form-group">
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                    required>
+            </div>
+
+            <div class="form-group">
+
+                <select id="destination" required>
+
+                    <option value="">
+                        Select Destination
+                    </option>
+
+                    <option>Darjeeling & Sikkim</option>
+                    <option>North Bengal Offbeat</option>
+                    <option>Kashmir</option>
+                    <option>Manali</option>
+                    <option>Andaman</option>
+                    <option>Other / Customized Tour</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <textarea
+                    id="message"
+                    placeholder="Tell us about your travel plan..."></textarea>
+
+            </div>
+
+            <button
+                type="submit"
+                class="btn btn-primary"
+                style="border:none;width:100%;cursor:pointer;">
+
+                Send Enquiry on WhatsApp
+
+            </button>
+
+        </form>
+
+    </div>
+
 </div>
-<div class="contact-card">
-<h3>Emergency Support</h3><p><a href="tel:+918013967348">8013967348</a></p>
-<h3 style="margin-top:20px">Office Address</h3><p>Narendra Pur, Kolkata – 700103, West Bengal</p>
-<p>Email: <a href="mailto:sarbojayitourism@gmail.com">sarbojayitourism@gmail.com</a></p>
+
 </div>
-</div>
-</div>
+
 </section>
-</main>
+
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
-<div class="container footer-flex">
-<div><strong>SARBOJAYI TOURISM</strong><br><small>Trusted Tour Operator · A unit of SARBOJAYI GROUP</small></div>
-<div>© 2026 Sarbojayi Tourism · All rights reserved</div>
+
+<div class="container">
+
+<div class="footer-grid">
+
+    <div>
+
+        <h3>SARBOJAYI TOURISM</h3>
+
+        <p>
+            Trusted Tour Operator for Personal, Group,
+            Honeymoon, Corporate and Customized Tours.
+        </p>
+
+        <p style="margin-top:12px;">
+            A unit of SARBOJAYI GROUP
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <h3>Quick Links</h3>
+
+        <p><a href="#home">Home</a></p>
+        <p><a href="#services">Services</a></p>
+        <p><a href="#destinations">Destinations</a></p>
+        <p><a href="#why">Why Us</a></p>
+        <p><a href="#contact">Contact</a></p>
+
+    </div>
+
+
+    <div>
+
+        <h3>Contact</h3>
+
+        <p>📞 +91 8100360030</p>
+        <p>☎️ +91 33 3576 4303</p>
+        <p>🚨 +91 8013967348</p>
+        <p>✉️ sarbojayitourism@gmail.com</p>
+        <p>📍 Narendra Pur, Kolkata – 700103</p>
+
+    </div>
+
 </div>
+
+
+<div class="footer-bottom">
+
+    © 2026 Sarbojayi Tourism.
+    All Rights Reserved.
+    <br>
+    Sarbojayi Tourism — A unit of SARBOJAYI GROUP
+
+</div>
+
+</div>
+
 </footer>
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a
+    class="whatsapp"
+    href="https://wa.me/918100360030"
+    target="_blank"
+    aria-label="WhatsApp">
+
+    ☎
+
+</a>
+
+
+<script>
+
+function sendWhatsApp(event){
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("name").value;
+
+    const phone =
+        document.getElementById("phone").value;
+
+    const destination =
+        document.getElementById("destination").value;
+
+    const message =
+        document.getElementById("message").value;
+
+    const text =
+        "Hello Sarbojayi Tourism,%0A%0A" +
+        "Name: " + encodeURIComponent(name) + "%0A" +
+        "Phone: " + encodeURIComponent(phone) + "%0A" +
+        "Destination: " + encodeURIComponent(destination) + "%0A" +
+        "Message: " + encodeURIComponent(message);
+
+    window.open(
+        "https://wa.me/918100360030?text=" + text,
+        "_blank"
+    );
+}
+
+</script>
 
 </body>
 </html>
