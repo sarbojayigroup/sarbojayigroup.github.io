@@ -1,10 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sarbojayi Tourism</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sarbojayi Tourism - Trusted Tour Operator for Domestic, International, Group, Honeymoon, Corporate and Customized Tours.">
+<title>Sarbojayi Tourism | Trusted Tour Operator</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;color:#172033;background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:1000;background:#fff;box-shadow:0 2px 14px #0001}
+.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo-placeholder{width:52px;height:52px;border:2px dashed #bbb;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:11px;text-align:center;color:#777}
+.brand strong{display:block;font-size:20px;letter-spacing:.4px}
+.brand small{color:#777}
+nav{display:flex;gap:20px;align-items:center}
+nav a{font-weight:600;font-size:14px}
+.cta{background:#0b6b57;color:#fff;padding:11px 17px;border-radius:25px}
+.hero{min-height:650px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,#071d28dd,#071d2866),url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-content{max-width:700px;padding:80px 0}
+.kicker{text-transform:uppercase;letter-spacing:3px;font-weight:700;font-size:13px}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.02;margin:15px 0}
+.hero p{font-size:20px;max-width:650px;color:#f2f5f6}
+.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:13px 22px;border-radius:28px;font-weight:700}
+.btn-primary{background:#fff;color:#0b6b57}
+.btn-secondary{border:1px solid #fff;color:#fff}
+section{padding:78px 0}
+.section-title{text-align:center;max-width:720px;margin:0 auto 40px}
+.section-title h2{font-size:38px;margin-bottom:10px}
+.section-title p{color:#687180}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border-radius:18px;padding:28px;box-shadow:0 8px 30px #13223812;border:1px solid #eef0f3}
+.card .icon{font-size:30px;margin-bottom:10px}
+.card h3{margin-bottom:8px}
+.card p{color:#687180}
+.destinations{background:#f6f8f7}
+.destination-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.destination{min-height:210px;border-radius:18px;overflow:hidden;position:relative;color:#fff;background-size:cover;background-position:center;display:flex;align-items:end}
+.destination div{width:100%;padding:22px;background:linear-gradient(transparent,#000b)}
+.destination h3{font-size:22px}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.why-box{background:#f7faf9;border-radius:24px;padding:35px}
+.check{margin:14px 0;font-weight:600}
+.contact{background:#0b6b57;color:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.contact-card{background:#ffffff12;border:1px solid #ffffff2b;padding:28px;border-radius:18px}
+.contact-card p{margin:10px 0}
+.contact-card a{text-decoration:underline}
+footer{background:#071d28;color:#dbe4e7;padding:28px 0}
+.footer-flex{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:850px){
+nav{display:none}.cards{grid-template-columns:1fr 1fr}.destination-grid{grid-template-columns:1fr 1fr}.why,.contact-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+.hero{min-height:600px}.cards,.destination-grid{grid-template-columns:1fr}section{padding:58px 0}.section-title h2{font-size:30px}.brand strong{font-size:16px}
+}
+</style>
 </head>
 <body>
-    <h1>Welcome to Sarbojayi Tourism</h1>
-    <p>Trusted Tour Operator</p>
+
+<header>
+<div class="container nav">
+<a class="brand" href="#home">
+<div class="logo-placeholder">LOGO<br>HERE</div>
+<div><strong>SARBOJAYI TOURISM</strong><small>A unit of SARBOJAYI GROUP</small></div>
+</a>
+<nav>
+<a href="#home">Home</a><a href="#tours">Tours</a><a href="#destinations">Destinations</a><a href="#about">Why Us</a><a href="#contact" class="cta">Contact</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container hero-content">
+<div class="kicker">Trusted Tour Operator</div>
+<h1>Travel More.<br>Experience More.</h1>
+<p>Beautiful journeys, thoughtfully planned. Explore North Bengal, India and international destinations with Sarbojayi Tourism.</p>
+<div class="buttons">
+<a class="btn btn-primary" href="tel:+918100360030">Call 8100360030</a>
+<a class="btn btn-secondary" href="https://wa.me/918100360030">WhatsApp Us</a>
+</div>
+</div>
+</section>
+
+<section id="tours">
+<div class="container">
+<div class="section-title"><h2>Our Tour Services</h2><p>Choose a travel style that suits you. We can also customize your complete tour plan.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🧳</div><h3>Domestic Tours</h3><p>Discover beautiful destinations across India with comfortable, planned itineraries.</p></div>
+<div class="card"><div class="icon">🌍</div><h3>International Tours</h3><p>Plan memorable international holidays with itinerary and travel support.</p></div>
+<div class="card"><div class="icon">👥</div><h3>Group Tours</h3><p>Well-planned group travel for families, friends, students and organizations.</p></div>
+<div class="card"><div class="icon">💍</div><h3>Honeymoon Tours</h3><p>Romantic journeys designed around your preferred destination and budget.</p></div>
+<div class="card"><div class="icon">🏢</div><h3>Corporate Tours</h3><p>Travel solutions for corporate groups, meetings, outings and team trips.</p></div>
+<div class="card"><div class="icon">🗺️</div><h3>Customized Tours</h3><p>Your dates, your budget, your destinations—we help build the plan around you.</p></div>
+</div>
+</div>
+</section>
+
+<section class="destinations" id="destinations">
+<div class="container">
+<div class="section-title"><h2>Explore Beautiful Destinations</h2><p>From the hills of North Bengal to unforgettable journeys across India and beyond.</p></div>
+<div class="destination-grid">
+<div class="destination" style="background-image:url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80')"><div><h3>Darjeeling</h3><p>North Bengal</p></div></div>
+<div class="destination" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80')"><div><h3>North Bengal</h3><p>Offbeat escapes</p></div></div>
+<div class="destination" style="background-image:url('https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=80')"><div><h3>Mountain & Nature</h3><p>India</p></div></div>
+<div class="destination" style="background-image:url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=900&q=80')"><div><h3>International</h3><p>Explore the world</p></div></div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container why">
+<div>
+<div class="section-title" style="text-align:left;margin:0 0 20px"><h2>Why Travel With Sarbojayi?</h2><p>We focus on genuine service, practical planning and support throughout your journey.</p></div>
+<div class="check">✓ Genuine & trusted travel support</div>
+<div class="check">✓ Budget-friendly and premium options</div>
+<div class="check">✓ Personalized & customized tour planning</div>
+<div class="check">✓ Family, couple, corporate, solo & student groups</div>
+<div class="check">✓ 24/7 support and guidance</div>
+</div>
+<div class="why-box">
+<h3>Plan Your Next Journey</h3>
+<p style="margin:12px 0 22px;color:#687180">Tell us your destination, dates, group size and approximate budget. We will help you shape the itinerary.</p>
+<a class="btn cta" href="tel:+918100360030">Talk to Us</a>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="container">
+<div class="section-title" style="color:#fff"><h2>Contact Sarbojayi Tourism</h2><p style="color:#dcebe7">We are ready to help you plan your next journey.</p></div>
+<div class="contact-grid">
+<div class="contact-card">
+<h3>Call & WhatsApp</h3><p><a href="tel:+918100360030">8100360030</a></p>
+<h3 style="margin-top:20px">Office</h3><p><a href="tel:+913335764303">033-35764303</a></p>
+</div>
+<div class="contact-card">
+<h3>Emergency Support</h3><p><a href="tel:+918013967348">8013967348</a></p>
+<h3 style="margin-top:20px">Office Address</h3><p>Narendra Pur, Kolkata – 700103, West Bengal</p>
+<p>Email: <a href="mailto:sarbojayitourism@gmail.com">sarbojayitourism@gmail.com</a></p>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container footer-flex">
+<div><strong>SARBOJAYI TOURISM</strong><br><small>Trusted Tour Operator · A unit of SARBOJAYI GROUP</small></div>
+<div>© 2026 Sarbojayi Tourism · All rights reserved</div>
+</div>
+</footer>
+
 </body>
 </html>
