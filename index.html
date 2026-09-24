@@ -2,28 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Sarbojayi Tourism | Trusted Tour Operator</title>
 
-<meta name="description"
-content="Sarbojayi Tourism - Trusted Tour Operator from Kolkata offering Personal, Family, Group, Honeymoon, Corporate and Customized Domestic & International Tours.">
-
-<meta name="keywords"
-content="Sarbojayi Tourism, Kolkata Tour Operator, Darjeeling Tour, Sikkim Tour, Kashmir Tour, Manali Tour, Andaman Tour, Sundarban Tour, North Bengal Tour">
-
-<meta name="author" content="Amar Das - Founder & MD, Sarbojayi Tourism">
-
-<meta name="theme-color" content="#071525">
+<meta name="description" content="Sarbojayi Tourism - Trusted Tour Operator from Kolkata. Domestic, International, Group, Honeymoon, Corporate and Customized Tours.">
+<meta name="theme-color" content="#071a2f">
 
 <style>
-
-/* =========================================================
-   SARBOJAYI TOURISM
-   PROFESSIONAL SINGLE PAGE WEBSITE
-   ========================================================= */
-
 *{
     margin:0;
     padding:0;
@@ -35,9 +21,9 @@ html{
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
     background:#f6f8fb;
-    color:#172033;
+    color:#162235;
     line-height:1.6;
 }
 
@@ -48,549 +34,287 @@ a{
 
 img{
     max-width:100%;
-    display:block;
 }
 
-/* ===============================
-   VARIABLES
-   =============================== */
-
-:root{
-    --navy:#071525;
-    --navy2:#0c2036;
-    --blue:#0b63ce;
-    --gold:#d9a441;
-    --green:#19b85a;
-    --light:#f6f8fb;
-    --white:#ffffff;
-    --text:#172033;
-    --muted:#687386;
-    --border:#e4e9f0;
-    --shadow:0 15px 45px rgba(7,21,37,.10);
-}
-
-/* ===============================
-   TOP BAR
-   =============================== */
+/* ================= HEADER ================= */
 
 .topbar{
-    background:#04101e;
-    color:#dbe7f5;
-    padding:8px 5%;
+    background:#061525;
+    color:#fff;
+    padding:12px 20px;
     display:flex;
-    justify-content:space-between;
-    align-items:center;
-    font-size:13px;
-    gap:15px;
-}
-
-.topbar-left{
-    display:flex;
-    gap:18px;
+    justify-content:center;
+    gap:35px;
     flex-wrap:wrap;
+    font-size:14px;
 }
 
 .topbar a{
     color:#fff;
 }
 
-.topbar a:hover{
-    color:#ffd66b;
+.header{
+    background:#091b2f;
+    color:#fff;
+    padding:16px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    border-bottom:1px solid rgba(255,255,255,.12);
 }
 
-/* ===============================
-   HEADER
-   =============================== */
+.logo-box{
+    width:90px;
+    height:90px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+}
 
-header{
+.logo-box img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    display:block;
+}
+
+.brand h1{
+    font-size:25px;
+    letter-spacing:1px;
+}
+
+.brand p{
+    color:#d9b45a;
+    letter-spacing:3px;
+    font-size:12px;
+    margin-top:4px;
+}
+
+/* ================= NAV ================= */
+
+.nav{
+    background:#0d2843;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:8px;
+    padding:10px;
     position:sticky;
     top:0;
     z-index:1000;
-    background:rgba(7,21,37,.96);
-    backdrop-filter:blur(12px);
-    border-bottom:1px solid rgba(255,255,255,.08);
 }
 
-.navbar{
-    width:92%;
-    max-width:1250px;
-    margin:auto;
-    min-height:82px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:25px;
-}
-
-.brand{
-    display:flex;
-    align-items:center;
-    gap:14px;
-    min-width:250px;
-}
-
-.brand-logo{
-    width:92px;
-    height:58px;
-    object-fit:contain;
-    filter:drop-shadow(0 0 10px rgba(255,211,85,.30));
-}
-
-.brand-name{
-    color:white;
-    font-weight:800;
-    letter-spacing:1px;
-    font-size:18px;
-}
-
-.brand-sub{
-    color:#d6b467;
-    font-size:10px;
-    letter-spacing:1.5px;
-    margin-top:2px;
-}
-
-nav{
-    display:flex;
-    align-items:center;
-    gap:24px;
-}
-
-nav a{
-    color:#e8eef6;
+.nav a{
+    color:#fff;
+    padding:9px 15px;
+    border-radius:20px;
     font-size:14px;
-    font-weight:600;
-    transition:.25s;
 }
 
-nav a:hover{
-    color:#ffd36a;
+.nav a:hover{
+    background:#d9b45a;
+    color:#08182a;
 }
 
-/* LANGUAGE SWITCH */
+/* ================= LANGUAGE ================= */
 
-.language-switch{
-    display:flex;
-    background:#122b45;
-    border:1px solid rgba(255,255,255,.15);
+.language{
+    position:absolute;
+    right:20px;
+    top:15px;
+    z-index:20;
+    background:#0d2843;
+    border:1px solid rgba(255,255,255,.3);
     padding:4px;
     border-radius:30px;
 }
 
-.lang-btn{
+.language button{
     border:0;
     background:transparent;
-    color:#d8e4f2;
-    padding:7px 12px;
-    border-radius:20px;
+    color:#fff;
+    padding:9px 16px;
+    border-radius:25px;
+    font-weight:bold;
     cursor:pointer;
-    font-size:12px;
-    font-weight:700;
 }
 
-.lang-btn.active{
-    background:#ffffff;
-    color:#071525;
+.language button.active{
+    background:#fff;
+    color:#14243a;
 }
 
-/* ===============================
-   HERO
-   =============================== */
+/* ================= HERO ================= */
 
 .hero{
-    min-height:680px;
-    position:relative;
+    min-height:650px;
+    background:
+    linear-gradient(rgba(4,22,37,.68),rgba(4,22,37,.72)),
+    url("https://images.unsplash.com/photo-1524498250077-390f9e378fc0?auto=format&fit=crop&w=1800&q=85")
+    center/cover no-repeat;
+
+    color:#fff;
     display:flex;
     align-items:center;
-    overflow:hidden;
-    background:
-    linear-gradient(90deg,
-    rgba(4,14,27,.92) 0%,
-    rgba(4,14,27,.70) 48%,
-    rgba(4,14,27,.20) 100%),
-    url("https://images.unsplash.com/photo-1549817997-f6958ecf47b9?auto=format&fit=crop&w=1800&q=88")
-    center/cover;
-}
-
-.hero::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(
-        120deg,
-        transparent 0%,
-        rgba(255,255,255,.04) 45%,
-        transparent 65%
-    );
-    animation:heroLight 7s infinite;
-}
-
-@keyframes heroLight{
-    0%{transform:translateX(-100%);}
-    50%{transform:translateX(100%);}
-    100%{transform:translateX(100%);}
+    position:relative;
 }
 
 .hero-content{
-    width:92%;
-    max-width:1250px;
-    margin:auto;
-    position:relative;
-    z-index:2;
-    color:white;
+    max-width:900px;
+    padding:80px 7%;
 }
 
-.hero-badge{
+.badge{
     display:inline-block;
-    border:1px solid rgba(255,255,255,.25);
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(8px);
-    padding:8px 15px;
+    border:1px solid rgba(255,255,255,.4);
+    padding:10px 22px;
     border-radius:30px;
-    font-size:12px;
-    font-weight:700;
-    letter-spacing:1.5px;
-    margin-bottom:20px;
+    letter-spacing:2px;
+    font-weight:bold;
+    margin-bottom:28px;
 }
 
-.hero h1{
-    font-size:clamp(42px,6vw,76px);
-    line-height:1.05;
-    max-width:760px;
-    margin-bottom:22px;
+.hero h2{
+    font-size:clamp(42px,7vw,78px);
+    line-height:1.02;
+    margin-bottom:25px;
 }
 
-.hero h1 span{
-    color:#ffd25c;
+.hero h2 span{
+    color:#ffd45b;
 }
 
 .hero p{
-    max-width:680px;
-    font-size:18px;
-    color:#e7edf5;
-    margin-bottom:30px;
+    max-width:700px;
+    font-size:20px;
+    margin-bottom:35px;
 }
 
-.hero-buttons{
+.buttons{
     display:flex;
+    gap:15px;
     flex-wrap:wrap;
-    gap:14px;
 }
 
 .btn{
-    display:inline-flex;
-    justify-content:center;
-    align-items:center;
-    padding:13px 23px;
-    border-radius:9px;
-    font-weight:700;
-    font-size:14px;
-    border:1px solid transparent;
-    transition:.25s;
-    cursor:pointer;
+    padding:15px 28px;
+    border-radius:10px;
+    font-weight:bold;
+    display:inline-block;
+    border:2px solid transparent;
 }
 
 .btn-primary{
-    background:#ffffff;
-    color:#071525;
-}
-
-.btn-primary:hover{
-    transform:translateY(-3px);
-    box-shadow:0 12px 30px rgba(0,0,0,.25);
+    background:#fff;
+    color:#092039;
 }
 
 .btn-whatsapp{
-    background:#19b85a;
-    color:white;
-}
-
-.btn-whatsapp:hover{
-    background:#119c49;
-    transform:translateY(-3px);
-}
-
-.btn-outline{
-    border-color:#d9a441;
+    background:#16c768;
     color:#fff;
-    background:transparent;
 }
 
-.btn-outline:hover{
-    background:#d9a441;
-    color:#071525;
-}
-
-.hero-stats{
-    margin-top:50px;
-    display:flex;
-    flex-wrap:wrap;
-    gap:30px;
-}
-
-.stat{
-    padding-right:28px;
-    border-right:1px solid rgba(255,255,255,.18);
-}
-
-.stat:last-child{
-    border-right:0;
-}
-
-.stat strong{
-    display:block;
-    color:#ffd66b;
-    font-size:18px;
-}
-
-.stat span{
-    color:#d5ddea;
-    font-size:12px;
-}
-
-/* ===============================
-   SECTION
-   =============================== */
+/* ================= SECTIONS ================= */
 
 section{
-    padding:85px 5%;
+    padding:75px 6%;
 }
 
-.container{
-    width:100%;
-    max-width:1250px;
-    margin:auto;
-}
-
-.section-head{
+.section-title{
     text-align:center;
-    max-width:760px;
-    margin:0 auto 45px;
+    margin-bottom:45px;
 }
 
-.section-label{
-    color:#0b63ce;
-    font-size:12px;
-    font-weight:800;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    margin-bottom:8px;
+.section-title h2{
+    font-size:36px;
+    color:#0a2037;
 }
 
-.section-head h2{
-    color:#071525;
-    font-size:clamp(30px,4vw,46px);
-    line-height:1.15;
-    margin-bottom:14px;
+.section-title p{
+    color:#667385;
+    max-width:700px;
+    margin:10px auto;
 }
 
-.section-head p{
-    color:var(--muted);
-}
-
-/* ===============================
-   ABOUT
-   =============================== */
-
-.about-grid{
-    display:grid;
-    grid-template-columns:1.15fr .85fr;
-    gap:55px;
-    align-items:center;
-}
-
-.about-text h2{
-    font-size:40px;
-    line-height:1.15;
-    margin-bottom:20px;
-}
-
-.about-text p{
-    color:#5e6a7c;
-    margin-bottom:15px;
-}
-
-.about-box{
-    margin-top:25px;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:15px;
-}
-
-.about-point{
-    background:white;
-    padding:18px;
-    border-radius:12px;
-    border:1px solid var(--border);
-    box-shadow:0 8px 25px rgba(0,0,0,.04);
-}
-
-.about-point strong{
-    display:block;
-    color:#071525;
-    margin-bottom:4px;
-}
-
-.about-point span{
-    color:#687386;
-    font-size:13px;
-}
-
-.about-logo-card{
-    min-height:330px;
-    border-radius:24px;
-    background:
-    radial-gradient(circle at center,
-    rgba(34,199,91,.22),
-    transparent 45%),
-    linear-gradient(145deg,#071525,#102c49);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    position:relative;
-    overflow:hidden;
-    box-shadow:var(--shadow);
-}
-
-.about-logo-card::before{
-    content:"";
-    position:absolute;
-    width:300px;
-    height:300px;
-    border:1px solid rgba(255,210,92,.18);
-    border-radius:50%;
-    animation:pulseRing 4s infinite;
-}
-
-@keyframes pulseRing{
-    0%,100%{transform:scale(.8);opacity:.2;}
-    50%{transform:scale(1.15);opacity:.7;}
-}
-
-.about-logo-card img{
-    width:82%;
-    max-width:500px;
-    position:relative;
-    z-index:2;
-    filter:drop-shadow(0 0 25px rgba(255,214,92,.25));
-}
-
-/* ===============================
-   SERVICES
-   =============================== */
+/* ================= SERVICES ================= */
 
 .service-grid{
     display:grid;
     grid-template-columns:repeat(5,1fr);
     gap:18px;
+    max-width:1200px;
+    margin:auto;
 }
 
-.service-card{
-    background:white;
-    border:1px solid var(--border);
-    border-radius:15px;
-    padding:28px 20px;
+.service{
+    background:#fff;
+    padding:28px 18px;
+    border-radius:16px;
     text-align:center;
+    box-shadow:0 8px 30px rgba(10,30,50,.08);
     transition:.3s;
 }
 
-.service-card:hover{
-    transform:translateY(-7px);
-    box-shadow:var(--shadow);
-    border-color:#cdd8e7;
+.service:hover{
+    transform:translateY(-6px);
 }
 
 .service-icon{
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    background:#edf5ff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:28px;
-    margin:0 auto 16px;
+    font-size:38px;
+    margin-bottom:12px;
 }
 
-.service-card h3{
-    font-size:17px;
-    margin-bottom:8px;
+.service h3{
+    font-size:18px;
 }
 
-.service-card p{
-    color:#718096;
-    font-size:13px;
-}
-
-/* ===============================
-   DESTINATIONS
-   =============================== */
+/* ================= DESTINATIONS ================= */
 
 .destination-grid{
+    max-width:1250px;
+    margin:auto;
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:25px;
 }
 
-.destination-card{
+.destination{
     background:#fff;
     border-radius:18px;
     overflow:hidden;
-    border:1px solid var(--border);
-    box-shadow:0 8px 25px rgba(0,0,0,.05);
+    box-shadow:0 10px 35px rgba(0,0,0,.10);
     cursor:pointer;
-    transition:.35s;
+    transition:.3s;
 }
 
-.destination-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 20px 50px rgba(7,21,37,.15);
+.destination:hover{
+    transform:translateY(-6px);
 }
 
-.destination-photo{
-    height:250px;
+.destination-img{
+    height:230px;
+    background-size:cover;
+    background-position:center;
     position:relative;
-    overflow:hidden;
-    background:#102238;
 }
 
-.destination-photo img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:opacity .7s ease, transform 1.2s ease;
-}
-
-.destination-card:hover .destination-photo img{
-    transform:scale(1.04);
-}
-
-.photo-overlay{
+.destination-img::after{
+    content:"";
     position:absolute;
     inset:0;
-    background:linear-gradient(
-        transparent 40%,
-        rgba(0,0,0,.70)
-    );
+    background:linear-gradient(transparent,rgba(0,0,0,.75));
 }
 
 .destination-name{
     position:absolute;
-    bottom:18px;
+    bottom:15px;
     left:18px;
-    right:18px;
     color:#fff;
     z-index:2;
-}
-
-.destination-name h3{
-    font-size:24px;
-    margin-bottom:2px;
-}
-
-.destination-name span{
-    font-size:12px;
-    opacity:.9;
+    font-size:23px;
+    font-weight:bold;
 }
 
 .destination-info{
@@ -598,3068 +322,189 @@ section{
 }
 
 .destination-info p{
-    color:#6c7889;
-    font-size:13px;
-    margin-bottom:16px;
-}
-
-.explore-btn{
-    color:#0b63ce;
-    font-size:13px;
-    font-weight:800;
-}
-
-/* ===============================
-   DESTINATION MODAL
-   =============================== */
-
-.modal{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.78);
-    backdrop-filter:blur(8px);
-    z-index:3000;
-    display:none;
-    padding:25px;
-    overflow:auto;
-}
-
-.modal.show{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.modal-box{
-    background:#fff;
-    width:100%;
-    max-width:1050px;
-    border-radius:22px;
-    overflow:hidden;
-    position:relative;
-    box-shadow:0 30px 90px rgba(0,0,0,.4);
-}
-
-.modal-close{
-    position:absolute;
-    right:18px;
-    top:15px;
-    width:40px;
-    height:40px;
-    border:0;
-    border-radius:50%;
-    background:rgba(0,0,0,.55);
-    color:#fff;
-    font-size:22px;
-    z-index:5;
-    cursor:pointer;
-}
-
-.modal-gallery{
-    height:390px;
-    background:#071525;
-    position:relative;
-}
-
-.modal-gallery img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.modal-content{
-    padding:35px;
-}
-
-.modal-content h2{
-    font-size:36px;
-    color:#071525;
-    margin-bottom:10px;
-}
-
-.modal-content .tagline{
-    color:#0b63ce;
-    font-weight:800;
-    margin-bottom:20px;
-}
-
-.detail-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
-    margin-top:25px;
-}
-
-.detail-box{
-    border:1px solid var(--border);
-    border-radius:12px;
-    padding:18px;
-    background:#f9fbfd;
-}
-
-.detail-box strong{
-    display:block;
-    margin-bottom:6px;
-    color:#071525;
-}
-
-.detail-box p{
-    color:#657184;
+    color:#697789;
     font-size:14px;
 }
 
-.modal-actions{
-    margin-top:28px;
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
+.more{
+    margin-top:12px;
+    color:#c08b18;
+    font-weight:bold;
 }
 
-/* ===============================
-   WHY US
-   =============================== */
+/* ================= WHY US ================= */
 
 .why{
-    background:#071525;
-    color:white;
+    background:#071a2f;
+    color:#fff;
 }
 
-.why .section-head h2{
-    color:white;
-}
-
-.why .section-head p{
-    color:#aebbd0;
+.why .section-title h2{
+    color:#fff;
 }
 
 .why-grid{
+    max-width:1100px;
+    margin:auto;
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:20px;
 }
 
 .why-card{
-    border:1px solid rgba(255,255,255,.1);
-    background:rgba(255,255,255,.04);
-    border-radius:15px;
-    padding:28px 20px;
     text-align:center;
-    transition:.3s;
+    padding:28px 15px;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:15px;
 }
 
-.why-card:hover{
-    background:rgba(255,255,255,.08);
-    transform:translateY(-5px);
-}
-
-.why-icon{
-    font-size:30px;
-    margin-bottom:14px;
+.why-card .icon{
+    font-size:35px;
+    margin-bottom:12px;
 }
 
 .why-card h3{
-    font-size:17px;
+    color:#ffd45b;
     margin-bottom:8px;
 }
 
-.why-card p{
-    color:#aebbd0;
-    font-size:13px;
+/* ================= FOUNDER ================= */
+
+.founder{
+    background:#fff;
 }
 
-/* ===============================
-   FOUNDER
-   =============================== */
-
-.founder-grid{
+.founder-box{
+    max-width:1000px;
+    margin:auto;
     display:grid;
-    grid-template-columns:.7fr 1.3fr;
-    gap:55px;
+    grid-template-columns:320px 1fr;
+    gap:45px;
     align-items:center;
 }
 
 .founder-photo{
-    background:linear-gradient(145deg,#071525,#14395c);
-    border-radius:22px;
-    padding:15px;
-    box-shadow:var(--shadow);
+    background:#eef2f6;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(0,0,0,.12);
 }
 
 .founder-photo img{
     width:100%;
-    max-height:500px;
+    display:block;
     object-fit:cover;
-    border-radius:15px;
 }
 
-.founder-content h2{
-    font-size:40px;
+.founder-text h2{
+    color:#0a2037;
+    font-size:34px;
     margin-bottom:8px;
 }
 
-.founder-role{
-    color:#0b63ce;
-    font-weight:800;
+.founder-text h3{
+    color:#c08b18;
     margin-bottom:20px;
 }
 
-.founder-content p{
-    color:#647184;
-    margin-bottom:14px;
+.founder-text p{
+    color:#596879;
+    margin-bottom:15px;
 }
 
-/* ===============================
-   REVIEWS
-   =============================== */
+/* ================= REVIEWS ================= */
 
 .review-section{
-    background:#f0f5fa;
+    background:#f1f5f9;
 }
 
-.review-card{
-    background:#fff;
-    border:1px solid var(--border);
-    border-radius:18px;
-    padding:28px;
-    max-width:800px;
+.review-box{
+    max-width:850px;
     margin:auto;
     text-align:center;
-    box-shadow:var(--shadow);
-}
-
-.stars{
-    color:#f2b01e;
-    font-size:28px;
-    letter-spacing:4px;
-    margin-bottom:15px;
-}
-
-.review-card h3{
-    font-size:25px;
-    margin-bottom:8px;
-}
-
-.review-card p{
-    color:#697588;
-    max-width:650px;
-    margin:0 auto 24px;
-}
-
-/* ===============================
-   ENQUIRY
-   =============================== */
-
-.enquiry-section{
-    background:
-    linear-gradient(135deg,#071525,#102e4d);
-    color:white;
-}
-
-.enquiry-grid{
-    display:grid;
-    grid-template-columns:.8fr 1.2fr;
-    gap:50px;
-    align-items:center;
-}
-
-.enquiry-text h2{
-    font-size:42px;
-    line-height:1.15;
-    margin-bottom:15px;
-}
-
-.enquiry-text p{
-    color:#bdc9d8;
-    margin-bottom:22px;
-}
-
-.contact-mini{
-    display:grid;
-    gap:10px;
-}
-
-.contact-mini div{
-    color:#dce5ef;
-}
-
-.contact-mini strong{
-    color:#ffd369;
-}
-
-.enquiry-form{
     background:#fff;
+    padding:45px 25px;
+    border-radius:20px;
+    box-shadow:0 8px 30px rgba(0,0,0,.07);
+}
+
+.review-box .stars{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.review-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 25px;
+    background:#4285f4;
+    color:#fff;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:#fff;
+}
+
+.contact-grid{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.contact-card{
+    background:#f7f9fb;
     padding:30px;
     border-radius:18px;
 }
 
-.form-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:14px;
-}
-
-.form-group{
-    margin-bottom:14px;
-}
-
-.form-group.full{
-    grid-column:1/-1;
-}
-
-.form-group label{
-    display:block;
-    color:#334155;
-    font-size:12px;
-    font-weight:700;
-    margin-bottom:5px;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea{
-    width:100%;
-    border:1px solid #dce3ec;
-    border-radius:8px;
-    padding:12px;
-    font:inherit;
-    outline:none;
-}
-
-.form-group textarea{
-    min-height:100px;
-    resize:vertical;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus{
-    border-color:#0b63ce;
-}
-
-/* ===============================
-   MAP
-   =============================== */
-
-.map-section{
-    padding-bottom:30px;
-}
-
-.map-card{
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:var(--shadow);
-    background:#fff;
-}
-
-.map-card iframe{
-    width:100%;
-    height:380px;
-    border:0;
-}
-
-.map-bottom{
-    padding:22px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.map-bottom h3{
-    margin-bottom:4px;
-}
-
-.map-bottom p{
-    color:#697588;
-    font-size:13px;
-}
-
-/* ===============================
-   CONTACT
-   =============================== */
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:18px;
-}
-
-.contact-card{
-    background:#fff;
-    border:1px solid var(--border);
-    border-radius:15px;
-    padding:24px;
-    text-align:center;
-}
-
-.contact-icon{
-    font-size:26px;
-    margin-bottom:10px;
-}
-
 .contact-card h3{
-    font-size:16px;
-    margin-bottom:5px;
+    margin-bottom:20px;
+    color:#0b223a;
 }
 
-.contact-card p{
-    color:#6b7789;
-    font-size:13px;
+.contact-item{
+    margin:15px 0;
 }
 
-.contact-card a{
-    color:#0b63ce;
-}
-
-/* ===============================
-   FOOTER
-   =============================== */
-
-footer{
-    background:#04101e;
-    color:#aebbd0;
-    padding:45px 5% 25px;
-}
-
-.footer-grid{
-    max-width:1250px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:1.3fr 1fr 1fr;
-    gap:40px;
-}
-
-.footer-brand img{
-    width:230px;
-    margin-bottom:15px;
-    filter:drop-shadow(0 0 12px rgba(255,255,255,.12));
-}
-
-.footer-brand p{
-    font-size:13px;
-    max-width:400px;
-}
-
-.footer-col h3{
-    color:#fff;
-    margin-bottom:13px;
-    font-size:16px;
-}
-
-.footer-col a{
+.contact-item strong{
     display:block;
-    margin-bottom:7px;
-    font-size:13px;
+    color:#c08b18;
 }
 
-.footer-col a:hover{
-    color:#ffd369;
+form input,
+form textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #d5dce4;
+    border-radius:9px;
+    margin-bottom:12px;
+    font-family:inherit;
 }
 
-.copyright{
-    max-width:1250px;
-    margin:35px auto 0;
-    padding-top:20px;
-    border-top:1px solid rgba(255,255,255,.1);
-    text-align:center;
-    font-size:12px;
+form textarea{
+    min-height:120px;
 }
 
-/* ===============================
-   FLOATING BUTTONS
-   =============================== */
-
-.floating-buttons{
-    position:fixed;
-    right:18px;
-    bottom:18px;
-    z-index:2000;
-    display:flex;
-    flex-direction:column;
-    gap:10px;
+form button{
+    width:100%;
+    border:0;
+    padding:15px;
+    border-radius:9px;
+    background:#16c768;
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
 }
 
-.float-btn{
-    width:54px;
-    height:54px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:white;
-    font-size:23px;
-    box-shadow:0 10px 30px rgba(0,0,0,.25);
-}
-
-.float-wa{
-    background:#19b85a;
-}
-
-.float-call{
-    background:#0b63ce;
-}
-
-/* ===============================
-   RESPONSIVE
-   =============================== */
-
-@media(max-width:1050px){
-
-    nav{
-        gap:14px;
-    }
-
-    .service-grid{
-        grid-template-columns:repeat(3,1fr);
-    }
-
-    .destination-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .why-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .contact-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-}
-
-@media(max-width:800px){
-
-    .topbar{
-        justify-content:center;
-        text-align:center;
-    }
-
-    .topbar-left{
-        justify-content:center;
-    }
-
-    .navbar{
-        min-height:70px;
-    }
-
-    .brand{
-        min-width:0;
-    }
-
-    .brand-logo{
-        width:65px;
-        height:48px;
-    }
-
-    .brand-name{
-        font-size:14px;
-    }
-
-    .brand-sub{
-        font-size:8px;
-    }
-
-    nav{
-        display:none;
-    }
-
-    .hero{
-        min-height:650px;
-    }
-
-    .hero h1{
-        font-size:43px;
-    }
-
-    .hero p{
-        font-size:15px;
-    }
-
-    .hero-stats{
-        gap:15px;
-        margin-top:35px;
-    }
-
-    .stat{
-        border-right:0;
-        padding-right:0;
-    }
-
-    .about-grid,
-    .founder-grid,
-    .enquiry-grid{
-        grid-template-columns:1fr;
-    }
-
-    .service-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .destination-grid{
-        grid-template-columns:1fr;
-    }
-
-    .why-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr;
-    }
-
-}
-
-@media(max-width:520px){
-
-    section{
-        padding:65px 5%;
-    }
-
-    .language-switch{
-        position:absolute;
-        right:12px;
-        top:72px;
-    }
-
-    .hero{
-        min-height:690px;
-    }
-
-    .hero h1{
-        font-size:38px;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-        align-items:stretch;
-    }
-
-    .btn{
-        width:100%;
-    }
-
-    .service-grid,
-    .why-grid,
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
-
-    .about-box,
-    .detail-grid,
-    .form-grid{
-        grid-template-columns:1fr;
-    }
-
-    .form-group.full{
-        grid-column:auto;
-    }
-
-    .modal{
-        padding:10px;
-    }
-
-    .modal-gallery{
-        height:250px;
-    }
-
-    .modal-content{
-        padding:25px 18px;
-    }
-
-    .modal-content h2{
-        font-size:29px;
-    }
-
-    .map-card iframe{
-        height:300px;
-    }
-
-}
-
-/* ===============================
-   ANIMATION
-   =============================== */
-
-.fade-in{
-    animation:fadeIn .8s ease both;
-}
-
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        transform:translateY(15px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-</style>
-</head>
-
-<body>
-
-<!-- =====================================================
-     TOP BAR
-===================================================== -->
-
-<div class="topbar">
-
-    <div class="topbar-left">
-
-        <span>
-            📞
-            <a href="tel:+918100360030">
-                +91 8100360030
-            </a>
-        </span>
-
-        <span>
-            ✉️
-            <a href="mailto:sarbojayitourism@gmail.com">
-                sarbojayitourism@gmail.com
-            </a>
-        </span>
-
-    </div>
-
-    <span>
-        🌐 www.sarbojayi.com
-    </span>
-
-</div>
-
-
-<!-- =====================================================
-     HEADER
-===================================================== -->
-
-<header>
-
-<div class="navbar">
-
-    <a href="#home" class="brand">
-
-        <img
-            src="logo.png"
-            alt="Sarbojayi Tourism Logo"
-            class="brand-logo"
-        >
-
-        <div>
-
-            <div class="brand-name">
-                SARBOJAYI TOURISM
-            </div>
-
-            <div class="brand-sub">
-                A UNIT OF SARBOJAYI GROUP
-            </div>
-
-        </div>
-
-    </a>
-
-
-    <nav>
-
-        <a href="#home" data-en="Home" data-bn="হোম">
-            Home
-        </a>
-
-        <a href="#about" data-en="About" data-bn="আমাদের সম্পর্কে">
-            About
-        </a>
-
-        <a href="#services" data-en="Services" data-bn="পরিষেবা">
-            Services
-        </a>
-
-        <a href="#destinations" data-en="Destinations" data-bn="ডেস্টিনেশন">
-            Destinations
-        </a>
-
-        <a href="#reviews" data-en="Reviews" data-bn="রিভিউ">
-            Reviews
-        </a>
-
-        <a href="#contact" data-en="Contact" data-bn="যোগাযোগ">
-            Contact
-        </a>
-
-    </nav>
-
-
-    <div class="language-switch">
-
-        <button
-            class="lang-btn active"
-            id="enBtn"
-            onclick="setLanguage('en')">
-            English
-        </button>
-
-        <button
-            class="lang-btn"
-            id="bnBtn"
-            onclick="setLanguage('bn')">
-            বাংলা
-        </button>
-
-    </div>
-
-</div>
-
-</header>
-
-
-<!-- =====================================================
-     HERO
-===================================================== -->
-
-<section class="hero" id="home">
-
-<div class="hero-content fade-in">
-
-    <div class="hero-badge"
-         data-en="TRUSTED TOUR OPERATOR"
-         data-bn="বিশ্বস্ত ট্যুর অপারেটর">
-
-        TRUSTED TOUR OPERATOR
-
-    </div>
-
-
-    <h1
-        data-en="Explore More. <span>Travel Better.</span>"
-        data-bn="আরও ঘুরুন। <span>আরও ভালোভাবে ভ্রমণ করুন।</span>">
-
-        Explore More.
-        <span>Travel Better.</span>
-
-    </h1>
-
-
-    <p
-        data-en="Plan memorable journeys with Sarbojayi Tourism — your trusted travel partner for Domestic & International Tours."
-        data-bn="Sarbojayi Tourism-এর সঙ্গে আপনার স্মরণীয় ভ্রমণ পরিকল্পনা করুন — Domestic ও International Tour-এর জন্য আপনার বিশ্বস্ত Travel Partner।">
-
-        Plan memorable journeys with Sarbojayi Tourism —
-        your trusted travel partner for Domestic & International Tours.
-
-    </p>
-
-
-    <div class="hero-buttons">
-
-        <a
-            href="#destinations"
-            class="btn btn-primary"
-            data-en="Explore Destinations"
-            data-bn="ডেস্টিনেশন দেখুন">
-
-            Explore Destinations
-
-        </a>
-
-
-        <a
-            href="https://wa.me/918100360030?text=Hello%20Sarbojayi%20Tourism,%20I%20want%20to%20plan%20a%20tour."
-            target="_blank"
-            class="btn btn-whatsapp">
-
-            💬
-            <span
-                data-en="Plan My Trip"
-                data-bn="আমার ট্রিপ প্ল্যান করুন">
-
-                Plan My Trip
-
-            </span>
-
-        </a>
-
-    </div>
-
-
-    <div class="hero-stats">
-
-        <div class="stat">
-
-            <strong>24/7</strong>
-
-            <span
-                data-en="Support & Guidance"
-                data-bn="সাপোর্ট ও গাইডেন্স">
-
-                Support & Guidance
-
-            </span>
-
-        </div>
-
-
-        <div class="stat">
-
-            <strong>Pan India</strong>
-
-            <span
-                data-en="Travel Coverage"
-                data-bn="ভ্রমণ পরিষেবা">
-
-                Travel Coverage
-
-            </span>
-
-        </div>
-
-
-        <div class="stat">
-
-            <strong>Custom</strong>
-
-            <span
-                data-en="Tour Planning"
-                data-bn="কাস্টম ট্যুর প্ল্যান">
-
-                Tour Planning
-
-            </span>
-
-        </div>
-
-    </div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     ABOUT
-===================================================== -->
-
-<section id="about">
-
-<div class="container">
-
-<div class="about-grid">
-
-    <div class="about-text">
-
-        <div class="section-label"
-             data-en="ABOUT US"
-             data-bn="আমাদের সম্পর্কে">
-
-            ABOUT US
-
-        </div>
-
-
-        <h2
-            data-en="Travel with confidence. Travel with Sarbojayi."
-            data-bn="বিশ্বাসের সঙ্গে ভ্রমণ করুন। Sarbojayi-এর সঙ্গে ভ্রমণ করুন।">
-
-            Travel with confidence.
-            Travel with Sarbojayi.
-
-        </h2>
-
-
-        <p
-            data-en="Sarbojayi Tourism is a trusted tour operator based in Kolkata, offering carefully planned Domestic and International travel experiences."
-            data-bn="Sarbojayi Tourism কলকাতা-ভিত্তিক একটি বিশ্বস্ত Tour Operator, যা পরিকল্পিত Domestic ও International travel experience প্রদান করে।">
-
-            Sarbojayi Tourism is a trusted tour operator based in Kolkata,
-            offering carefully planned Domestic and International travel experiences.
-
-        </p>
-
-
-        <p
-            data-en="From family holidays and honeymoon journeys to group, corporate and customized tours, we focus on practical planning, genuine support and memorable experiences."
-            data-bn="Family Holiday, Honeymoon, Group, Corporate এবং Customized Tour—প্রতিটি ভ্রমণের জন্য আমরা পরিকল্পনা, genuine support এবং memorable experience-এর উপর গুরুত্ব দিই।">
-
-            From family holidays and honeymoon journeys to group,
-            corporate and customized tours, we focus on practical planning,
-            genuine support and memorable experiences.
-
-        </p>
-
-
-        <div class="about-box">
-
-            <div class="about-point">
-
-                <strong
-                    data-en="Domestic Tours"
-                    data-bn="Domestic Tour">
-
-                    Domestic Tours
-
-                </strong>
-
-                <span
-                    data-en="Explore India with customized travel plans."
-                    data-bn="Customized plan-এর মাধ্যমে ভারত ভ্রমণ করুন।">
-
-                    Explore India with customized travel plans.
-
-                </span>
-
-            </div>
-
-
-            <div class="about-point">
-
-                <strong
-                    data-en="International Tours"
-                    data-bn="International Tour">
-
-                    International Tours
-
-                </strong>
-
-                <span
-                    data-en="Plan international holidays with guided support."
-                    data-bn="Guided support-এর সঙ্গে International holiday plan করুন।">
-
-                    Plan international holidays with guided support.
-
-                </span>
-
-            </div>
-
-
-            <div class="about-point">
-
-                <strong
-                    data-en="Customized Planning"
-                    data-bn="Customized Planning">
-
-                    Customized Planning
-
-                </strong>
-
-                <span
-                    data-en="Your itinerary, your pace, your preferences."
-                    data-bn="আপনার itinerary, আপনার pace, আপনার preference।">
-
-                    Your itinerary, your pace, your preferences.
-
-                </span>
-
-            </div>
-
-
-            <div class="about-point">
-
-                <strong
-                    data-en="24/7 Support"
-                    data-bn="24/7 Support">
-
-                    24/7 Support
-
-                </strong>
-
-                <span
-                    data-en="Support and guidance when you need it."
-                    data-bn="প্রয়োজনে support ও guidance।">
-
-                    Support and guidance when you need it.
-
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <div class="about-logo-card">
-
-        <img
-            src="logo.png"
-            alt="Sarbojayi Tourism"
-        >
-
-    </div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     SERVICES
-===================================================== -->
-
-<section id="services">
-
-<div class="container">
-
-<div class="section-head">
-
-    <div class="section-label"
-         data-en="OUR SERVICES"
-         data-bn="আমাদের পরিষেবা">
-
-        OUR SERVICES
-
-    </div>
-
-
-    <h2
-        data-en="Travel solutions for every kind of traveller"
-        data-bn="প্রতিটি ধরনের পর্যটকের জন্য Travel Solution">
-
-        Travel solutions for every kind of traveller
-
-    </h2>
-
-
-    <p
-        data-en="Choose a tour style or let us customize your journey around your needs."
-        data-bn="আপনার পছন্দের Tour type বেছে নিন অথবা আপনার প্রয়োজন অনুযায়ী Customized Tour Plan করুন।">
-
-        Choose a tour style or let us customize your journey around your needs.
-
-    </p>
-
-</div>
-
-
-<div class="service-grid">
-
-    <div class="service-card">
-
-        <div class="service-icon">🧳</div>
-
-        <h3
-            data-en="Personal Tour"
-            data-bn="Personal Tour">
-
-            Personal Tour
-
-        </h3>
-
-        <p
-            data-en="Flexible private travel plans."
-            data-bn="Flexible private travel plan।">
-
-            Flexible private travel plans.
-
-        </p>
-
-    </div>
-
-
-    <div class="service-card">
-
-        <div class="service-icon">👨‍👩‍👧‍👦</div>
-
-        <h3
-            data-en="Group Tour"
-            data-bn="Group Tour">
-
-            Group Tour
-
-        </h3>
-
-        <p
-            data-en="Comfortable travel for groups and families."
-            data-bn="Group ও Family-এর জন্য comfortable travel।">
-
-            Comfortable travel for groups and families.
-
-        </p>
-
-    </div>
-
-
-    <div class="service-card">
-
-        <div class="service-icon">💍</div>
-
-        <h3
-            data-en="Honeymoon"
-            data-bn="Honeymoon">
-
-            Honeymoon
-
-        </h3>
-
-        <p
-            data-en="Romantic journeys designed for couples."
-            data-bn="Couple-এর জন্য romantic journey।">
-
-            Romantic journeys designed for couples.
-
-        </p>
-
-    </div>
-
-
-    <div class="service-card">
-
-        <div class="service-icon">💼</div>
-
-        <h3
-            data-en="Corporate"
-            data-bn="Corporate">
-
-            Corporate
-
-        </h3>
-
-        <p
-            data-en="Corporate travel and group planning."
-            data-bn="Corporate travel ও group planning।">
-
-            Corporate travel and group planning.
-
-        </p>
-
-    </div>
-
-
-    <div class="service-card">
-
-        <div class="service-icon">🗺️</div>
-
-        <h3
-            data-en="Customized"
-            data-bn="Customized">
-
-            Customized
-
-        </h3>
-
-        <p
-            data-en="Build your itinerary around your preferences."
-            data-bn="আপনার preference অনুযায়ী itinerary তৈরি করুন।">
-
-            Build your itinerary around your preferences.
-
-        </p>
-
-    </div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     DESTINATIONS
-===================================================== -->
-
-<section id="destinations">
-
-<div class="container">
-
-<div class="section-head">
-
-    <div class="section-label"
-         data-en="EXPLORE INDIA"
-         data-bn="ডেস্টিনেশন">
-
-        EXPLORE INDIA
-
-    </div>
-
-
-    <h2
-        data-en="Discover destinations worth travelling to"
-        data-bn="যে ডেস্টিনেশনগুলো আপনার ঘুরে দেখা উচিত">
-
-        Discover destinations worth travelling to
-
-    </h2>
-
-
-    <p
-        data-en="Click any destination to discover why it is famous, what makes it attractive and why you should visit."
-        data-bn="যেকোনো Destination-এ click করে জানুন কেন এটি বিখ্যাত, কী এর বিশেষত্ব এবং কেন আপনার এখানে আসা উচিত।">
-
-        Click any destination to discover why it is famous,
-        what makes it attractive and why you should visit.
-
-    </p>
-
-</div>
-
-
-<div class="destination-grid" id="destinationGrid"></div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     WHY US
-===================================================== -->
-
-<section class="why" id="why">
-
-<div class="container">
-
-<div class="section-head">
-
-    <div class="section-label"
-         style="color:#ffd369;"
-         data-en="WHY SARBOJAYI"
-         data-bn="কেন Sarbojayi">
-
-        WHY SARBOJAYI
-
-    </div>
-
-
-    <h2
-        data-en="A travel partner focused on your journey"
-        data-bn="আপনার ভ্রমণকে গুরুত্ব দেওয়া একটি Travel Partner">
-
-        A travel partner focused on your journey
-
-    </h2>
-
-
-    <p
-        data-en="We aim to make travel planning clear, comfortable and dependable."
-        data-bn="Travel planning-কে সহজ, পরিষ্কার, comfortable এবং dependable রাখাই আমাদের লক্ষ্য।">
-
-        We aim to make travel planning clear, comfortable and dependable.
-
-    </p>
-
-</div>
-
-
-<div class="why-grid">
-
-    <div class="why-card">
-
-        <div class="why-icon">🤝</div>
-
-        <h3
-            data-en="Genuine & Trusted"
-            data-bn="Genuine & Trusted">
-
-            Genuine & Trusted
-
-        </h3>
-
-        <p
-            data-en="Transparent travel assistance and genuine communication."
-            data-bn="স্বচ্ছ travel assistance ও genuine communication।">
-
-            Transparent travel assistance and genuine communication.
-
-        </p>
-
-    </div>
-
-
-    <div class="why-card">
-
-        <div class="why-icon">💰</div>
-
-        <h3
-            data-en="Budget Friendly"
-            data-bn="Budget Friendly">
-
-            Budget Friendly
-
-        </h3>
-
-        <p
-            data-en="Plans designed around your budget and requirements."
-            data-bn="আপনার budget ও requirement অনুযায়ী plan।">
-
-            Plans designed around your budget and requirements.
-
-        </p>
-
-    </div>
-
-
-    <div class="why-card">
-
-        <div class="why-icon">⭐</div>
-
-        <h3
-            data-en="Premium Service"
-            data-bn="Premium Service">
-
-            Premium Service
-
-        </h3>
-
-        <p
-            data-en="Attention to planning, comfort and travel experience."
-            data-bn="Planning, comfort ও travel experience-এর প্রতি গুরুত্ব।">
-
-            Attention to planning, comfort and travel experience.
-
-        </p>
-
-    </div>
-
-
-    <div class="why-card">
-
-        <div class="why-icon">📞</div>
-
-        <h3
-            data-en="24/7 Support"
-            data-bn="24/7 Support">
-
-            24/7 Support
-
-        </h3>
-
-        <p
-            data-en="Support and guidance throughout your journey."
-            data-bn="আপনার journey জুড়ে support ও guidance।">
-
-            Support and guidance throughout your journey.
-
-        </p>
-
-    </div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     FOUNDER
-===================================================== -->
-
-<section>
-
-<div class="container">
-
-<div class="founder-grid">
-
-    <div class="founder-photo">
-
-        <img
-            src="amar-das.jpg"
-            alt="Amar Das - Founder & MD, Sarbojayi Tourism"
-        >
-
-    </div>
-
-
-    <div class="founder-content">
-
-        <div class="section-label"
-             data-en="LEADERSHIP"
-             data-bn="নেতৃত্ব">
-
-            LEADERSHIP
-
-        </div>
-
-
-        <h2>
-            Amar Das
-        </h2>
-
-
-        <div class="founder-role">
-            Founder & MD
-            <br>
-            Sarbojayi Tourism
-        </div>
-
-
-        <p
-            data-en="Sarbojayi Tourism is built around a simple idea — travel should be enjoyable, clearly planned and supported by a dependable travel partner."
-            data-bn="Sarbojayi Tourism একটি সহজ ধারণার উপর তৈরি — ভ্রমণ আনন্দদায়ক, পরিষ্কারভাবে পরিকল্পিত এবং একটি dependable travel partner-এর support-সহ হওয়া উচিত।">
-
-            Sarbojayi Tourism is built around a simple idea —
-            travel should be enjoyable, clearly planned and supported
-            by a dependable travel partner.
-
-        </p>
-
-
-        <p
-            data-en="Our goal is to connect travellers with meaningful destinations while providing practical planning, customized solutions and continuous support."
-            data-bn="আমাদের লক্ষ্য হলো পর্যটকদের আকর্ষণীয় Destination-এর সঙ্গে যুক্ত করা এবং practical planning, customized solution ও continuous support প্রদান করা।">
-
-            Our goal is to connect travellers with meaningful destinations
-            while providing practical planning, customized solutions and
-            continuous support.
-
-        </p>
-
-
-        <a
-            href="https://wa.me/918100360030?text=Hello%20Amar%20Das,%20I%20would%20like%20to%20plan%20a%20tour."
-            target="_blank"
-            class="btn btn-primary">
-
-            💬
-            <span
-                data-en="Talk to Us"
-                data-bn="আমাদের সঙ্গে কথা বলুন">
-
-                Talk to Us
-
-            </span>
-
-        </a>
-
-    </div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     REVIEWS
-===================================================== -->
-
-<section class="review-section" id="reviews">
-
-<div class="container">
-
-<div class="section-head">
-
-    <div class="section-label"
-         data-en="TRAVELLER REVIEWS"
-         data-bn="পর্যটকদের মতামত">
-
-        TRAVELLER REVIEWS
-
-    </div>
-
-
-    <h2
-        data-en="Your experience matters to us"
-        data-bn="আপনার অভিজ্ঞতা আমাদের কাছে গুরুত্বপূর্ণ">
-
-        Your experience matters to us
-
-    </h2>
-
-
-    <p
-        data-en="Have you travelled with Sarbojayi Tourism? Share your genuine experience on Google."
-        data-bn="আপনি কি Sarbojayi Tourism-এর সঙ্গে ভ্রমণ করেছেন? Google-এ আপনার genuine experience share করুন।">
-
-        Have you travelled with Sarbojayi Tourism?
-        Share your genuine experience on Google.
-
-    </p>
-
-</div>
-
-
-<div class="review-card">
-
-    <div class="stars">
-        ★★★★★
-    </div>
-
-
-    <h3
-        data-en="Review Sarbojayi Tourism on Google"
-        data-bn="Google-এ Sarbojayi Tourism-এর Review দিন">
-
-        Review Sarbojayi Tourism on Google
-
-    </h3>
-
-
-    <p
-        data-en="Your genuine feedback helps future travellers understand our service and travel experience."
-        data-bn="আপনার genuine feedback ভবিষ্যৎ পর্যটকদের আমাদের service ও travel experience সম্পর্কে জানতে সাহায্য করবে।">
-
-        Your genuine feedback helps future travellers understand
-        our service and travel experience.
-
-    </p>
-
-
-    <a
-        href="https://g.page/r/Cbx03MMvdidqEBM/review"
-        target="_blank"
-        rel="noopener"
-        class="btn btn-primary">
-
-        ⭐
-        <span
-            data-en="Review us on Google"
-            data-bn="Google-এ Review দিন">
-
-            Review us on Google
-
-        </span>
-
-    </a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     ENQUIRY
-===================================================== -->
-
-<section class="enquiry-section" id="contact">
-
-<div class="container">
-
-<div class="enquiry-grid">
-
-    <div class="enquiry-text">
-
-        <div class="section-label"
-             style="color:#ffd369;"
-             data-en="PLAN YOUR JOURNEY"
-             data-bn="আপনার ভ্রমণ পরিকল্পনা করুন">
-
-            PLAN YOUR JOURNEY
-
-        </div>
-
-
-        <h2
-            data-en="Tell us where you want to go."
-            data-bn="আপনি কোথায় যেতে চান আমাদের জানান।">
-
-            Tell us where you want to go.
-
-        </h2>
-
-
-        <p
-            data-en="Send a quick enquiry and our team will help you plan your journey."
-            data-bn="একটি Quick Enquiry পাঠান এবং আমাদের team আপনার journey plan করতে সাহায্য করবে।">
-
-            Send a quick enquiry and our team will help you plan your journey.
-
-        </p>
-
-
-        <div class="contact-mini">
-
-            <div>
-                📱
-                <strong>Call & WhatsApp:</strong>
-                +91 8100360030
-            </div>
-
-            <div>
-                ☎️
-                <strong>Office:</strong>
-                +91 33 3576 4303
-            </div>
-
-            <div>
-                🚨
-                <strong>Emergency:</strong>
-                +91 8013967348
-            </div>
-
-            <div>
-                ✉️
-                <strong>Email:</strong>
-                sarbojayitourism@gmail.com
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <form
-        class="enquiry-form"
-        onsubmit="sendEnquiry(event)">
-
-        <div class="form-grid">
-
-            <div class="form-group">
-
-                <label
-                    data-en="Your Name"
-                    data-bn="আপনার নাম">
-
-                    Your Name
-
-                </label>
-
-                <input
-                    id="name"
-                    type="text"
-                    required
-                    placeholder="Your name">
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label
-                    data-en="Mobile Number"
-                    data-bn="মোবাইল নম্বর">
-
-                    Mobile Number
-
-                </label>
-
-                <input
-                    id="phone"
-                    type="tel"
-                    required
-                    placeholder="Mobile number">
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label
-                    data-en="Destination"
-                    data-bn="Destination">
-
-                    Destination
-
-                </label>
-
-                <select id="destination">
-
-                    <option>Darjeeling</option>
-                    <option>Gangtok / Sikkim</option>
-                    <option>North Bengal</option>
-                    <option>Kashmir</option>
-                    <option>Manali</option>
-                    <option>Andaman</option>
-                    <option>Sundarban</option>
-                    <option>Other</option>
-
-                </select>
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label
-                    data-en="Travel Date"
-                    data-bn="ভ্রমণের তারিখ">
-
-                    Travel Date
-
-                </label>
-
-                <input
-                    id="date"
-                    type="date">
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label
-                    data-en="Travellers"
-                    data-bn="পর্যটকের সংখ্যা">
-
-                    Travellers
-
-                </label>
-
-                <input
-                    id="travellers"
-                    type="number"
-                    min="1"
-                    placeholder="Number of travellers">
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label
-                    data-en="Tour Type"
-                    data-bn="Tour Type">
-
-                    Tour Type
-
-                </label>
-
-                <select id="tourtype">
-
-                    <option>Personal Tour</option>
-                    <option>Family Tour</option>
-                    <option>Group Tour</option>
-                    <option>Honeymoon</option>
-                    <option>Corporate Tour</option>
-                    <option>Customized Tour</option>
-
-                </select>
-
-            </div>
-
-
-            <div class="form-group full">
-
-                <label
-                    data-en="Message"
-                    data-bn="আপনার প্রয়োজন">
-
-                    Message
-
-                </label>
-
-                <textarea
-                    id="message"
-                    placeholder="Tell us what you need..."></textarea>
-
-            </div>
-
-        </div>
-
-
-        <button
-            type="submit"
-            class="btn btn-whatsapp"
-            style="width:100%;">
-
-            💬
-            <span
-                data-en="Send Enquiry on WhatsApp"
-                data-bn="WhatsApp-এ Enquiry পাঠান">
-
-                Send Enquiry on WhatsApp
-
-            </span>
-
-        </button>
-
-    </form>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     GOOGLE MAP
-===================================================== -->
-
-<section class="map-section">
-
-<div class="container">
-
-<div class="section-head">
-
-    <div class="section-label"
-         data-en="OUR LOCATION"
-         data-bn="আমাদের ঠিকানা">
-
-        OUR LOCATION
-
-    </div>
-
-
-    <h2
-        data-en="Find Sarbojayi Tourism"
-        data-bn="Sarbojayi Tourism-এর ঠিকানা">
-
-        Find Sarbojayi Tourism
-
-    </h2>
-
-
-    <p
-        data-en="Visit our location or open Google Maps for directions."
-        data-bn="আমাদের location দেখুন অথবা directions-এর জন্য Google Maps খুলুন।">
-
-        Visit our location or open Google Maps for directions.
-
-    </p>
-
-</div>
-
-
-<div class="map-card">
-
-    <iframe
-        src="https://www.google.com/maps?q=SARBOJAYI%20TOURISM%2C%20Ramchandra%20pur%2C%20Subash%20pally%2C%20Narendrapur%2C%20Kolkata%20700103&output=embed"
-        loading="lazy"
-        allowfullscreen>
-    </iframe>
-
-
-    <div class="map-bottom">
-
-        <div>
-
-            <h3>
-                SARBOJAYI TOURISM
-            </h3>
-
-            <p>
-                Ramchandra Pur, Subash Pally,
-                P.S. Narendrapur,
-                Kolkata – 700103,
-                West Bengal, India
-            </p>
-
-        </div>
-
-
-        <a
-            href="https://maps.app.goo.gl/nSFgGNW59azwqeLF7"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-primary">
-
-            📍
-            <span
-                data-en="Open in Google Maps"
-                data-bn="Google Maps-এ খুলুন">
-
-                Open in Google Maps
-
-            </span>
-
-        </a>
-
-    </div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     CONTACT CARDS
-===================================================== -->
-
-<section>
-
-<div class="container">
-
-<div class="section-head">
-
-    <div class="section-label"
-         data-en="CONTACT US"
-         data-bn="যোগাযোগ করুন">
-
-        CONTACT US
-
-    </div>
-
-
-    <h2
-        data-en="We are here to help"
-        data-bn="আমরা আপনার সাহায্যের জন্য আছি">
-
-        We are here to help
-
-    </h2>
-
-</div>
-
-
-<div class="contact-grid">
-
-    <div class="contact-card">
-
-        <div class="contact-icon">
-            📱
-        </div>
-
-        <h3
-            data-en="Call & WhatsApp"
-            data-bn="Call & WhatsApp">
-
-            Call & WhatsApp
-
-        </h3>
-
-        <p>
-            <a href="tel:+918100360030">
-                +91 8100360030
-            </a>
-        </p>
-
-    </div>
-
-
-    <div class="contact-card">
-
-        <div class="contact-icon">
-            ☎️
-        </div>
-
-        <h3
-            data-en="Office"
-            data-bn="অফিস">
-
-            Office
-
-        </h3>
-
-        <p>
-            <a href="tel:+913335764303">
-                +91 33 3576 4303
-            </a>
-        </p>
-
-    </div>
-
-
-    <div class="contact-card">
-
-        <div class="contact-icon">
-            🚨
-        </div>
-
-        <h3
-            data-en="Emergency Support"
-            data-bn="Emergency Support">
-
-            Emergency Support
-
-        </h3>
-
-        <p>
-            <a href="tel:+918013967348">
-                +91 8013967348
-            </a>
-        </p>
-
-    </div>
-
-
-    <div class="contact-card">
-
-        <div class="contact-icon">
-            ✉️
-        </div>
-
-        <h3>
-            Email
-        </h3>
-
-        <p>
-            <a href="mailto:sarbojayitourism@gmail.com">
-                sarbojayitourism@gmail.com
-            </a>
-        </p>
-
-    </div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer>
-
-<div class="footer-grid">
-
-    <div class="footer-brand">
-
-        <img
-            src="logo.png"
-            alt="Sarbojayi Tourism">
-
-        <p
-            data-en="Sarbojayi Tourism — A unit of SARBOJAYI GROUP. Trusted tour operator for Domestic & International travel."
-            data-bn="Sarbojayi Tourism — A unit of SARBOJAYI GROUP। Domestic ও International travel-এর জন্য বিশ্বস্ত Tour Operator।">
-
-            Sarbojayi Tourism — A unit of SARBOJAYI GROUP.
-            Trusted tour operator for Domestic & International travel.
-
-        </p>
-
-    </div>
-
-
-    <div class="footer-col">
-
-        <h3
-            data-en="Quick Links"
-            data-bn="Quick Links">
-
-            Quick Links
-
-        </h3>
-
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#destinations">Destinations</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
-
-    </div>
-
-
-    <div class="footer-col">
-
-        <h3
-            data-en="Travel With Us"
-            data-bn="আমাদের সঙ্গে ভ্রমণ করুন">
-
-            Travel With Us
-
-        </h3>
-
-        <a href="#destinations">
-            Darjeeling
-        </a>
-
-        <a href="#destinations">
-            Sikkim / Gangtok
-        </a>
-
-        <a href="#destinations">
-            Kashmir
-        </a>
-
-        <a href="#destinations">
-            Manali
-        </a>
-
-        <a href="#destinations">
-            Andaman
-        </a>
-
-        <a href="#destinations">
-            Sundarban
-        </a>
-
-    </div>
-
-</div>
-
-
-<div class="copyright">
-
-    © 2026 Sarbojayi Tourism.
-    All Rights Reserved.
-    <br>
-
-    A Unit of SARBOJAYI GROUP • Kolkata, West Bengal, India
-
-</div>
-
-</footer>
-
-
-<!-- =====================================================
-     FLOATING BUTTONS
-===================================================== -->
-
-<div class="floating-buttons">
-
-    <a
-        href="tel:+918100360030"
-        class="float-btn float-call"
-        aria-label="Call">
-
-        📞
-
-    </a>
-
-
-    <a
-        href="https://wa.me/918100360030?text=Hello%20Sarbojayi%20Tourism,%20I%20want%20to%20plan%20a%20tour."
-        target="_blank"
-        class="float-btn float-wa"
-        aria-label="WhatsApp">
-
-        💬
-
-    </a>
-
-</div>
-
-
-<!-- =====================================================
-     DESTINATION MODAL
-===================================================== -->
-
-<div
-    class="modal"
-    id="destinationModal"
-    onclick="closeModalOutside(event)">
-
-    <div class="modal-box">
-
-        <button
-            class="modal-close"
-            onclick="closeDestination()">
-
-            ×
-
-        </button>
-
-
-        <div class="modal-gallery">
-
-            <img
-                id="modalImage"
-                src=""
-                alt="Destination">
-
-        </div>
-
-
-        <div class="modal-content">
-
-            <div class="section-label">
-                DESTINATION GUIDE
-            </div>
-
-
-            <h2 id="modalTitle">
-                Destination
-            </h2>
-
-
-            <div
-                id="modalTagline"
-                class="tagline">
-            </div>
-
-
-            <div
-                id="modalDescription">
-            </div>
-
-
-            <div class="detail-grid">
-
-                <div class="detail-box">
-
-                    <strong
-                        id="whyTitle">
-                        Why Visit?
-                    </strong>
-
-                    <p id="whyText"></p>
-
-                </div>
-
-
-                <div class="detail-box">
-
-                    <strong
-                        id="famousTitle">
-                        Famous For
-                    </strong>
-
-                    <p id="famousText"></p>
-
-                </div>
-
-
-                <div class="detail-box">
-
-                    <strong
-                        id="bestTitle">
-                        Best Time
-                    </strong>
-
-                    <p id="bestText"></p>
-
-                </div>
-
-
-                <div class="detail-box">
-
-                    <strong
-                        id="idealTitle">
-                        Ideal For
-                    </strong>
-
-                    <p id="idealText"></p>
-
-                </div>
-
-            </div>
-
-
-            <div class="modal-actions">
-
-                <a
-                    id="modalWhatsApp"
-                    href="#"
-                    target="_blank"
-                    class="btn btn-whatsapp">
-
-                    💬
-                    <span
-                        data-en="Plan This Destination"
-                        data-bn="এই Destination Plan করুন">
-
-                        Plan This Destination
-
-                    </span>
-
-                </a>
-
-
-                <a
-                    href="#contact"
-                    onclick="closeDestination()"
-                    class="btn btn-primary">
-
-                    📝
-                    <span
-                        data-en="Quick Enquiry"
-                        data-bn="Quick Enquiry">
-
-                        Quick Enquiry
-
-                    </span>
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-<script>
-
-/* =========================================================
-   DESTINATION DATA
-   ========================================================= */
-
-const destinations = {
-
-darjeeling:{
-
-name_en:"Darjeeling",
-name_bn:"দার্জিলিং",
-
-tag_en:"Queen of the Hills",
-tag_bn:"পাহাড়ের রানি",
-
-desc_en:"Darjeeling is loved for its Himalayan scenery, tea gardens, heritage railway experience and peaceful mountain atmosphere.",
-desc_bn:"দার্জিলিং তার হিমালয়, চা-বাগান, ঐতিহ্যবাহী টয় ট্রেন এবং শান্ত পাহাড়ি পরিবেশের জন্য বিখ্যাত।",
-
-why_en:"Come for mountain views, tea gardens, sunrise experiences and the unique charm of a classic Himalayan hill station.",
-why_bn:"পাহাড়ের দৃশ্য, চা-বাগান, সূর্যোদয় এবং ঐতিহ্যবাহী পাহাড়ি শহরের আকর্ষণের জন্য দার্জিলিং ভ্রমণ করুন।",
-
-famous_en:"Tea Gardens, Kanchenjunga Views, Tiger Hill, Toy Train, Batasia Loop and Himalayan culture.",
-famous_bn:"চা-বাগান, কাঞ্চনজঙ্ঘা, টাইগার হিল, টয় ট্রেন, বাতাসিয়া লুপ ও হিমালয়ান সংস্কৃতি।",
-
-best_en:"Generally March–May and October–December are popular periods, subject to weather.",
-best_bn:"সাধারণত মার্চ–মে এবং অক্টোবর–ডিসেম্বর জনপ্রিয় সময়, তবে আবহাওয়ার উপর নির্ভরশীল।",
-
-ideal_en:"Family, Couple, Honeymoon, Photography and Mountain Lovers.",
-ideal_bn:"Family, Couple, Honeymoon, Photography ও Mountain Lover।",
-
-images:[
-"https://images.unsplash.com/photo-1549817997-f6958ecf47b9?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1710316439760-3e8d399d183f?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1646772809232-d2b6300c1688?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1574299446543-d096405b27e6?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1692599110823-05571b089d50?auto=format&fit=crop&w=1400&q=85"
-]
-
-},
-
-
-gangtok:{
-
-name_en:"Gangtok & Sikkim",
-name_bn:"গ্যাংটক ও সিকিম",
-
-tag_en:"Peaceful Himalayan Escape",
-tag_bn:"শান্ত হিমালয়ান ভ্রমণ",
-
-desc_en:"Gangtok combines Himalayan views, monasteries, mountain roads and a lively yet peaceful hill-town experience.",
-desc_bn:"গ্যাংটক হিমালয়ের দৃশ্য, মঠ, পাহাড়ি রাস্তা এবং সুন্দর hill-town experience-এর এক অনন্য সংমিশ্রণ।",
-
-why_en:"Visit for mountain landscapes, spiritual experiences, clean surroundings and access to spectacular Sikkim destinations.",
-why_bn:"পাহাড়, spiritual experience, সুন্দর পরিবেশ এবং সিকিমের আকর্ষণীয় Destination-এর জন্য এখানে আসুন।",
-
-famous_en:"MG Marg, Tsomgo Lake, Nathula Pass, monasteries, Himalayan viewpoints and Sikkim culture.",
-famous_bn:"MG Marg, Tsomgo Lake, Nathula Pass, Monastery, Himalayan viewpoint ও Sikkim culture।",
-
-best_en:"March–May and October–December are commonly preferred, depending on destination and road conditions.",
-best_bn:"সাধারণত মার্চ–মে এবং অক্টোবর–ডিসেম্বর জনপ্রিয়, তবে destination ও road condition-এর উপর নির্ভরশীল।",
-
-ideal_en:"Family, Couple, Honeymoon, Group and Adventure Travellers.",
-ideal_bn:"Family, Couple, Honeymoon, Group ও Adventure Traveller।",
-
-images:[
-"https://images.unsplash.com/photo-1615966192539-f1731963b19a?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1715878537374-1cb05ca16f8a?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1624771011651-8c4f2fe700be?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1656665508464-9c7a0046459d?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1741535796028-d50429641bac?auto=format&fit=crop&w=1400&q=85"
-]
-
-},
-
-
-northbengal:{
-
-name_en:"North Bengal",
-name_bn:"উত্তরবঙ্গ",
-
-tag_en:"Offbeat Hills, Forests & Nature",
-tag_bn:"অফবিট পাহাড়, জঙ্গল ও প্রকৃতি",
-
-desc_en:"North Bengal offers a wide range of experiences — hills, forests, tea gardens, villages and peaceful offbeat destinations.",
-desc_bn:"উত্তরবঙ্গ মানেই পাহাড়, জঙ্গল, চা-বাগান, গ্রাম এবং শান্ত অফবিট Destination-এর অসাধারণ বৈচিত্র্য।",
-
-why_en:"Perfect for travellers who want to discover less-crowded mountain villages, forests and nature-rich destinations.",
-why_bn:"যারা কম ভিড়ের পাহাড়ি গ্রাম, জঙ্গল ও প্রকৃতির কাছাকাছি থাকতে চান তাদের জন্য আদর্শ।",
-
-famous_en:"Sittong, Lava, Loleygaon, Pedong, Rishop, Iccheygaon, Chatakpur, Dooars and more.",
-famous_bn:"সিটং, লাভা, লোলেগাঁও, পেডং, রিশপ, ইচ্ছেগাঁও, চাটকপুর, ডুয়ার্স এবং আরও অনেক Destination।",
-
-best_en:"Season varies by destination; spring, autumn and winter are popular for many hill areas.",
-best_bn:"Destination অনুযায়ী season আলাদা; অনেক পাহাড়ি অঞ্চলে spring, autumn ও winter জনপ্রিয়।",
-
-ideal_en:"Offbeat Travellers, Nature Lovers, Couples, Families and Photography Lovers.",
-ideal_bn:"Offbeat Traveller, Nature Lover, Couple, Family ও Photography Lover।",
-
-images:[
-"https://images.unsplash.com/photo-1549817997-f6958ecf47b9?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1710316439760-3e8d399d183f?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1692599110823-05571b089d50?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1607441078533-77ba814b1e5d?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1574299446543-d096405b27e6?auto=format&fit=crop&w=1400&q=85"
-]
-
-},
-
-
-kashmir:{
-
-name_en:"Kashmir",
-name_bn:"কাশ্মীর",
-
-tag_en:"Paradise of Mountains & Lakes",
-tag_bn:"পাহাড় ও হ্রদের স্বর্গ",
-
-desc_en:"Kashmir attracts travellers with dramatic mountain landscapes, lakes, valleys, gardens and distinctive local culture.",
-desc_bn:"কাশ্মীর তার পাহাড়, হ্রদ, উপত্যকা, বাগান এবং অনন্য local culture-এর জন্য পর্যটকদের আকর্ষণ করে।",
-
-why_en:"Come for scenic valleys, Dal Lake experiences, mountain landscapes, gardens and seasonal beauty.",
-why_bn:"Scenic valley, Dal Lake, পাহাড়, বাগান এবং ঋতুভেদে বদলে যাওয়া প্রকৃতির সৌন্দর্যের জন্য কাশ্মীর ভ্রমণ করুন।",
-
-famous_en:"Srinagar, Dal Lake, Pahalgam, Gulmarg, Sonmarg, gardens and mountain valleys.",
-famous_bn:"শ্রীনগর, ডাল লেক, পাহেলগাম, গুলমার্গ, সোনমার্গ, বাগান ও পাহাড়ি উপত্যকা।",
-
-best_en:"The ideal season depends on the experience — spring flowers, summer greenery, autumn colours or winter snow.",
-best_bn:"কী দেখতে চান তার উপর season নির্ভর করে — spring flowers, summer greenery, autumn colours বা winter snow।",
-
-ideal_en:"Family, Couple, Honeymoon, Photography and Snow Lovers.",
-ideal_bn:"Family, Couple, Honeymoon, Photography ও Snow Lover।",
-
-images:[
-"https://images.unsplash.com/photo-1698300653426-3f6a52ba322c?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1624464026997-4edff27521ae?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1646204894165-95ed03d988ad?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1639647383258-abee94a76f84?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1782284639026-8559edddf932?auto=format&fit=crop&w=1400&q=85"
-]
-
-},
-
-
-manali:{
-
-name_en:"Manali",
-name_bn:"মানালি",
-
-tag_en:"Mountains, Valleys & Adventure",
-tag_bn:"পাহাড়, উপত্যকা ও Adventure",
-
-desc_en:"Manali offers Himalayan scenery, forest roads, river valleys and a wide variety of leisure and adventure experiences.",
-desc_bn:"মানালি হিমালয়, জঙ্গল, নদী উপত্যকা এবং leisure ও adventure-এর বিভিন্ন অভিজ্ঞতার জন্য জনপ্রিয়।",
-
-why_en:"A versatile destination for mountain holidays, scenic drives, adventure activities and relaxed stays.",
-why_bn:"Mountain holiday, scenic drive, adventure activity এবং relaxed stay-এর জন্য একটি versatile Destination।",
-
-famous_en:"Solang Valley, Old Manali, Beas River, mountain roads, forests and snow-season experiences.",
-famous_bn:"সোলাং ভ্যালি, Old Manali, Beas River, mountain road, forest ও snow-season experience।",
-
-best_en:"Season depends on your plan — summer for greenery and winter for snow experiences.",
-best_bn:"আপনার travel plan অনুযায়ী season বেছে নিন — greenery-এর জন্য summer এবং snow-এর জন্য winter।",
-
-ideal_en:"Family, Couple, Honeymoon, Group and Adventure Travellers.",
-ideal_bn:"Family, Couple, Honeymoon, Group ও Adventure Traveller।",
-
-images:[
-"https://images.unsplash.com/photo-1742879158306-ede24e4744fc?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1665419920579-11b16a13690a?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1621743822550-6ac2e3ce1bd8?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1646204894165-95ed03d988ad?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1549817997-f6958ecf47b9?auto=format&fit=crop&w=1400&q=85"
-]
-
-},
-
-
-andaman:{
-
-name_en:"Andaman",
-name_bn:"আন্দামান",
-
-tag_en:"Tropical Islands & Blue Waters",
-tag_bn:"নীল জল ও Tropical Island",
-
-desc_en:"Andaman is ideal for travellers looking for beaches, clear waters, island experiences and a relaxed tropical holiday.",
-desc_bn:"সমুদ্রসৈকত, নীল জল, island experience এবং relaxed tropical holiday-এর জন্য আন্দামান অসাধারণ।",
-
-why_en:"Escape to a tropical setting with beaches, marine experiences, island scenery and peaceful coastal landscapes.",
-why_bn:"Beach, marine experience, island scenery এবং peaceful coastal landscape-এর জন্য এখানে আসুন।",
-
-famous_en:"Port Blair, Havelock, beaches, islands, marine activities and coastal scenery.",
-famous_bn:"Port Blair, Havelock, beach, island, marine activity ও coastal scenery।",
-
-best_en:"October–May is commonly preferred for many island holiday plans, subject to weather and sea conditions.",
-best_bn:"অনেক island holiday plan-এর জন্য October–May জনপ্রিয়, তবে weather ও sea condition-এর উপর নির্ভরশীল।",
-
-ideal_en:"Couples, Honeymoon, Families, Groups and Beach Lovers.",
-ideal_bn:"Couple, Honeymoon, Family, Group ও Beach Lover।",
-
-images:[
-"https://images.unsplash.com/photo-1767783501028-26a71c6b1416?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1767782841806-d0589735bcd4?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1579317333730-98a84ccff3ac?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1767783095339-c75a4fcdefd3?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1769771668180-119435855d84?auto=format&fit=crop&w=1400&q=85"
-]
-
-},
-
-
-sundarban:{
-
-name_en:"Sundarban",
-name_bn:"সুন্দরবন",
-
-tag_en:"Mangroves, Rivers & Wildlife",
-tag_bn:"ম্যানগ্রোভ, নদী ও বন্যপ্রাণী",
-
-desc_en:"Sundarban offers a distinctive mangrove landscape, waterways, village life and nature-based travel experience.",
-desc_bn:"সুন্দরবন তার ম্যানগ্রোভ বন, নদী, গ্রাম্য জীবন এবং nature-based travel experience-এর জন্য বিশেষ।",
-
-why_en:"Visit for a completely different Bengal travel experience surrounded by waterways, mangrove forests and nature.",
-why_bn:"নদী, ম্যানগ্রোভ বন এবং প্রকৃতির মধ্যে একেবারে অন্যরকম Bengal travel experience-এর জন্য সুন্দরবন ভ্রমণ করুন।",
-
-famous_en:"Mangrove forests, waterways, boat journeys, wildlife and local rural life.",
-famous_bn:"ম্যানগ্রোভ বন, নদীপথ, boat journey, wildlife ও local rural life।",
-
-best_en:"Winter and the cooler months are commonly preferred for comfortable nature travel, subject to weather and local conditions.",
-best_bn:"আরামদায়ক nature travel-এর জন্য winter ও cooler months জনপ্রিয়, তবে weather ও local condition-এর উপর নির্ভরশীল।",
-
-ideal_en:"Families, Groups, Nature Lovers, Photographers and Adventure Travellers.",
-ideal_bn:"Family, Group, Nature Lover, Photographer ও Adventure Traveller।",
-
-images:[
-"https://images.unsplash.com/photo-1607441078533-77ba814b1e5d?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1769771668180-119435855d84?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1767783501028-26a71c6b1416?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1767783095339-c75a4fcdefd3?auto=format&fit=crop&w=1400&q=85",
-"https://images.unsplash.com/photo-1767782841806-d0589735bcd4?auto=format&fit=crop&w=1400&q=85"
-]
-
-}
-
-};
-
-
-/* =========================================================
-   LANGUAGE
-========================================================= */
-
-let currentLanguage = "en";
-
-function setLanguage(lang){
-
-    currentLanguage = lang;
-
-    document.documentElement.lang =
-        lang === "bn" ? "bn" : "en";
-
-
-    document.querySelectorAll("[data-en]").forEach(el=>{
-
-        if(el.tagName === "INPUT" || el.tagName === "TEXTAREA"){
-            return;
-        }
-
-        const text =
-            lang === "bn"
-            ? el.getAttribute("data-bn")
-            : el.getAttribute("data-en");
-
-        if(text !== null){
-            el.innerHTML = text;
-        }
-
-    });
-
-
-    document.getElementById("enBtn")
-        .classList.toggle("active",lang==="en");
-
-    document.getElementById("bnBtn")
-        .classList.toggle("active",lang==="bn");
-
-
-    renderDestinations();
-
-}
-
-
-/* =========================================================
-   DESTINATION CARDS
-========================================================= */
-
-function renderDestinations(){
-
-    const grid =
-        document.getElementById("destinationGrid");
-
-    grid.innerHTML = "";
-
-
-    Object.entries(destinations).forEach(([key,destination])=>{
-
-        const card =
-            document.createElement("div");
-
-        card.className =
-            "destination-card";
-
-
-        card.onclick = () =>
-            openDestination(key);
-
-
-        card.innerHTML = `
-
-            <div class="destination-photo">
-
-                <img
-                    id="card-image-${key}"
-                    src="${destination.images[0]}"
-                    alt="${destination.name_en}"
-                    loading="lazy">
-
-                <div class="photo-overlay"></div>
-
-                <div class="destination-name">
-
-                    <h3>
-                        ${
-                            currentLanguage === "bn"
-                            ? destination.name_bn
-                            : destination.name_en
-                        }
-                    </h3>
-
-                    <span>
-                        ${
-                            currentLanguage === "bn"
-                            ? destination.tag_bn
-                            : destination.tag_en
-                        }
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <div class="destination-info">
-
-                <p>
-                    ${
-                        currentLanguage === "bn"
-                        ? destination.desc_bn
-                        : destination.desc_en
-                    }
-                </p>
-
-                <div class="explore-btn">
-
-                    ${
-                        currentLanguage === "bn"
-                        ? "বিস্তারিত দেখুন →"
-                        : "Explore Destination →"
-                    }
-
-                </div>
-
-            </div>
-
-        `;
-
-
-        grid.appendChild(card);
-
-    });
-
-}
-
-
-/* =========================================================
-   DESTINATION AUTO SLIDER
-========================================================= */
-
-let slideIndexes = {};
-
-Object.keys(destinations).forEach(key=>{
-    slideIndexes[key] = 0;
-});
-
-
-function changeDestinationImages(){
-
-    Object.entries(destinations).forEach(([key,destination])=>{
-
-        slideIndexes[key]++;
-
-        if(slideIndexes[key] >= destination.images.length){
-            slideIndexes[key] = 0;
-        }
-
-
-        const image =
-            document.getElementById("card-image-"+key);
-
-        if(image){
-
-            image.style.opacity = "0";
-
-
-            setTimeout(()=>{
-
-                image.src =
-                    destination.images[slideIndexes[key]];
-
-                image.style.opacity = "1";
-
-            },350);
-
-        }
-
-    });
-
-}
-
-
-/* Change every 4 seconds */
-
-setInterval(
-    changeDestinationImages,
-    4000
-);
-
-
-/* =========================================================
-   DESTINATION MODAL
-========================================================= */
-
-let modalTimer = null;
-let modalImageIndex = 0;
-let activeDestination = null;
-
-
-function openDestination(key){
-
-    activeDestination =
-        destinations[key];
-
-    modalImageIndex = 0;
-
-
-    const d =
-        activeDestination;
-
-
-    document.getElementById("modalTitle")
-        .textContent =
-        currentLanguage === "bn"
-        ? d.name_bn
-        : d.name_en;
-
-
-    document.getElementById("modalTagline")
-        .textContent =
-        currentLanguage === "bn"
-        ? d.tag_bn
-        : d.tag_en;
-
-
-    document.getElementById("modalDescription")
-        .textContent =
-        currentLanguage === "bn"
-        ? d.desc_bn
-        : d.desc_en;
-
-
-    document.getElementById("whyText")
-        .textContent =
-        currentLanguage === "bn"
-        ? d.why_bn
-        : d.why_en;
-
-
-    document.getElementById("famousText")
-        .textContent =
-        currentLanguage === "bn"
-        ? d.famous_bn
-        : d.famous_en;
-
-
-    document.getElementById("bestText")
-        .textContent =
-        currentLanguage === "bn"
-        ? d.best_bn
-        : d.best_en;
-
-
-    document.getElementById("idealText")
-        .textContent =
-        currentLanguage === "bn"
-        ? d.ideal_bn
-        : d.ideal_en;
-
-
-    document.getElementById("whyTitle")
-        .textContent =
-        currentLanguage === "bn"
-        ? "কেন যাবেন?"
-        : "Why Visit?";
-
-
-    document.getElementById("famousTitle")
-        .textContent =
-        currentLanguage === "bn"
-        ? "কী জন্য বিখ্যাত?"
-        : "Famous For";
-
-
-    document.getElementById("bestTitle")
-        .textContent =
-        currentLanguage === "bn"
-        ? "Best Time"
-        : "Best Time";
-
-
-    document.getElementById("idealTitle")
-        .textContent =
-        currentLanguage === "bn"
-        ? "কার জন্য উপযুক্ত?"
-        : "Ideal For";
-
-
-    document.getElementById("modalImage")
-        .src =
-        d.images[0];
-
-
-    const message =
-        currentLanguage === "bn"
-        ? `Hello Sarbojayi Tourism, আমি ${d.name_bn} tour সম্পর্কে জানতে চাই।`
-        : `Hello Sarbojayi Tourism, I want to know about a ${d.name_en} tour.`;
-
-
-    document.getElementById("modalWhatsApp")
-        .href =
-        "https://wa.me/918100360030?text="
-        + encodeURIComponent(message);
-
-
-    document.getElementById("destinationModal")
-        .classList.add("show");
-
-
-    document.body.style.overflow =
-        "hidden";
-
-
-    clearInterval(modalTimer);
-
-
-    modalTimer =
-        setInterval(()=>{
-
-            modalImageIndex++;
-
-            if(modalImageIndex >= d.images.length){
-                modalImageIndex = 0;
-            }
-
-            const image =
-                document.getElementById("modalImage");
-
-            image.style.opacity = "0";
-
-
-            setTimeout(()=>{
-
-                image.src =
-                    d.images[modalImageIndex];
-
-                image.style.opacity = "1";
-
-            },350);
-
-        },4000);
-
-}
-
-
-function closeDestination(){
-
-    document.getElementById("destinationModal")
-        .classList.remove("show");
-
-    document.body.style.overflow =
-        "";
-
-    clearInterval(modalTimer);
-
-}
-
-
-function closeModalOutside(event){
-
-    if(event.target.id === "destinationModal"){
-        closeDestination();
-    }
-
-}
-
-
-/* =========================================================
-   WHATSAPP ENQUIRY
-========================================================= */
-
-function sendEnquiry(event){
-
-    event.preventDefault();
-
-
-    const name =
-        document.getElementById("name").value;
-
-    const phone =
-        document.getElementById("phone").value;
-
-    const destination =
-        document.getElementById("destination").value;
-
-    const date =
-        document.getElementById("date").value;
-
-    const travellers =
-        document.getElementById("travellers").value;
-
-    const tourtype =
-        document.getElementById("tourtype").value;
-
-    const message =
-        document.getElementById("message").value;
-
-
-    const text =
-
-`Hello Sarbojayi Tourism,
-
-I want to plan a tour.
-
-Name: ${name}
-Mobile: ${phone}
-Destination: ${destination}
-Travel Date: ${date || "Not specified"}
-Travellers: ${travellers || "Not specified"}
-Tour Type: ${tourtype}
-
-Message:
-${message || "No additional message"}
-
-Website:
-www.sarbojayi.com`;
-
-
-    const url =
-        "https://wa.me/918100360030?text="
-        + encodeURIComponent(text);
-
-
-    window.open(url,"_blank");
-
-}
-
-
-/* =========================================================
-   ESC KEY
-========================================================= */
-
-document.addEventListener("keydown",function(event){
-
-    if(event.key === "Escape"){
-        closeDestination();
-    }
-
-});
-
-
-/* =========================================================
-   INITIALIZE
-========================================================= */
-
-renderDestinations();
-
-</script>
-
-</body>
-</html>
+/* ================= MAP ================= */
+
+.map-button{
+    display:inline-block;
+    margin-top:15px;
+    background:#0d
