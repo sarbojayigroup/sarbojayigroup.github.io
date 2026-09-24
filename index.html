@@ -507,4 +507,892 @@ form button{
 .map-button{
     display:inline-block;
     margin-top:15px;
-    background:#0d
+    background:#0d2843;
+    color:#fff;
+    padding:12px 20px;
+    border-radius:9px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#04111f;
+    color:#fff;
+    text-align:center;
+    padding:35px 20px;
+}
+
+footer strong{
+    color:#ffd45b;
+}
+
+footer p{
+    color:#aeb8c4;
+    margin-top:8px;
+}
+
+/* ================= FLOATING BUTTONS ================= */
+
+.floating{
+    position:fixed;
+    right:18px;
+    bottom:20px;
+    z-index:999;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.float-btn{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:27px;
+    color:#fff;
+    box-shadow:0 6px 20px rgba(0,0,0,.25);
+}
+
+.phone{
+    background:#146bd1;
+}
+
+.whatsapp{
+    background:#16c768;
+}
+
+/* ================= MODAL ================= */
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    z-index:2000;
+    padding:25px;
+    overflow:auto;
+}
+
+.modal-box{
+    max-width:750px;
+    margin:50px auto;
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    position:relative;
+}
+
+.close{
+    position:absolute;
+    right:18px;
+    top:12px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.modal-box h2{
+    color:#0b223a;
+    margin-bottom:15px;
+}
+
+.modal-box h3{
+    color:#c08b18;
+    margin-top:20px;
+}
+
+.modal-box ul{
+    padding-left:20px;
+}
+
+.modal-btn{
+    display:inline-block;
+    background:#16c768;
+    color:#fff;
+    padding:12px 20px;
+    border-radius:9px;
+    margin-top:20px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .destination-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:650px){
+
+    .topbar{
+        gap:10px 20px;
+        font-size:12px;
+    }
+
+    .header{
+        padding:12px;
+    }
+
+    .logo-box,
+    .logo-box img{
+        width:70px;
+        height:70px;
+    }
+
+    .brand h1{
+        font-size:20px;
+    }
+
+    .brand p{
+        font-size:9px;
+        letter-spacing:2px;
+    }
+
+    .nav{
+        display:none;
+    }
+
+    .language{
+        position:absolute;
+        top:10px;
+        right:10px;
+    }
+
+    .hero{
+        min-height:680px;
+    }
+
+    .hero-content{
+        padding:90px 25px 60px;
+    }
+
+    .hero h2{
+        font-size:48px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+    .btn{
+        text-align:center;
+        width:100%;
+    }
+
+    section{
+        padding:55px 20px;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .service-grid,
+    .destination-grid,
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .destination-img{
+        height:240px;
+    }
+
+    .founder-box,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .founder-photo{
+        max-width:320px;
+        margin:auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP CONTACT -->
+<div class="topbar">
+    <a href="tel:+918100360030">📞 +91 8100360030</a>
+    <a href="mailto:sarbojayitourism@gmail.com">✉️ sarbojayitourism@gmail.com</a>
+    <a href="https://www.sarbojayi.com">🌐 www.sarbojayi.com</a>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+
+    <div class="logo-box">
+        <img src="./logo.png" alt="Sarbojayi Tourism Logo">
+    </div>
+
+    <div class="brand">
+        <h1>SARBOJAYI TOURISM</h1>
+        <p>A UNIT OF SARBOJAYI GROUP</p>
+    </div>
+
+</header>
+
+<!-- LANGUAGE -->
+<div class="language">
+    <button id="englishBtn" class="active" onclick="setLanguage('en')">English</button>
+    <button id="bengaliBtn" onclick="setLanguage('bn')">বাংলা</button>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#why">Why Us</a>
+    <a href="#founder">Founder</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="badge" id="heroBadge">
+            TRUSTED TOUR OPERATOR
+        </div>
+
+        <h2 id="heroTitle">
+            Explore More.<br>
+            <span>Travel Better.</span>
+        </h2>
+
+        <p id="heroText">
+            Plan memorable journeys with Sarbojayi Tourism —
+            your trusted travel partner for Domestic & International Tours.
+        </p>
+
+        <div class="buttons">
+            <a href="#destinations" class="btn btn-primary">
+                Explore Destinations
+            </a>
+
+            <a href="https://wa.me/918100360030?text=Hello%20Sarbojayi%20Tourism,%20I%20want%20to%20plan%20a%20tour."
+               class="btn btn-whatsapp">
+                💬 Plan My Trip
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+
+    <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Travel solutions designed for every kind of traveller.</p>
+    </div>
+
+    <div class="service-grid">
+
+        <div class="service">
+            <div class="service-icon">🧳</div>
+            <h3>Personal Tour</h3>
+            <p>Comfortable and personalised travel planning.</p>
+        </div>
+
+        <div class="service">
+            <div class="service-icon">👨‍👩‍👧‍👦</div>
+            <h3>Group Tour</h3>
+            <p>Well-planned group journeys with complete support.</p>
+        </div>
+
+        <div class="service">
+            <div class="service-icon">💍</div>
+            <h3>Honeymoon</h3>
+            <p>Romantic holidays planned around your preferences.</p>
+        </div>
+
+        <div class="service">
+            <div class="service-icon">💼</div>
+            <h3>Corporate</h3>
+            <p>Travel arrangements for corporate groups and teams.</p>
+        </div>
+
+        <div class="service">
+            <div class="service-icon">🗺️</div>
+            <h3>Customized Tour</h3>
+            <p>Your itinerary, your choice, our planning.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section id="destinations">
+
+    <div class="section-title">
+        <h2>Popular Destinations</h2>
+        <p>Explore beautiful destinations across India and beyond.</p>
+    </div>
+
+    <div class="destination-grid">
+
+        <div class="destination" onclick="openDestination('darjeeling')">
+            <div class="destination-img"
+            style="background-image:url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1000&q=85')">
+                <div class="destination-name">Darjeeling & Sikkim</div>
+            </div>
+            <div class="destination-info">
+                <p>Mountains, tea gardens, monasteries and breathtaking views.</p>
+                <div class="more">Discover More →</div>
+            </div>
+        </div>
+
+        <div class="destination" onclick="openDestination('northbengal')">
+            <div class="destination-img"
+            style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85')">
+                <div class="destination-name">North Bengal</div>
+            </div>
+            <div class="destination-info">
+                <p>Offbeat villages, forests, hills and peaceful homestays.</p>
+                <div class="more">Discover More →</div>
+            </div>
+        </div>
+
+        <div class="destination" onclick="openDestination('kashmir')">
+            <div class="destination-img"
+            style="background-image:url('https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1000&q=85')">
+                <div class="destination-name">Kashmir</div>
+            </div>
+            <div class="destination-info">
+                <p>Paradise of lakes, mountains, valleys and gardens.</p>
+                <div class="more">Discover More →</div>
+            </div>
+        </div>
+
+        <div class="destination" onclick="openDestination('manali')">
+            <div class="destination-img"
+            style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1000&q=85')">
+                <div class="destination-name">Manali</div>
+            </div>
+            <div class="destination-info">
+                <p>Snow mountains, adventure, rivers and scenic valleys.</p>
+                <div class="more">Discover More →</div>
+            </div>
+        </div>
+
+        <div class="destination" onclick="openDestination('andaman')">
+            <div class="destination-img"
+            style="background-image:url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1000&q=85')">
+                <div class="destination-name">Andaman</div>
+            </div>
+            <div class="destination-info">
+                <p>Beautiful beaches, islands, marine life and relaxation.</p>
+                <div class="more">Discover More →</div>
+            </div>
+        </div>
+
+        <div class="destination" onclick="openDestination('gangtok')">
+            <div class="destination-img"
+            style="background-image:url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1000&q=85')">
+                <div class="destination-name">Gangtok</div>
+            </div>
+            <div class="destination-info">
+                <p>Mountain views, monasteries, culture and peaceful surroundings.</p>
+                <div class="more">Discover More →</div>
+            </div>
+        </div>
+
+        <div class="destination" onclick="openDestination('sundarban')">
+            <div class="destination-img"
+            style="background-image:url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1000&q=85')">
+                <div class="destination-name">Sundarban</div>
+            </div>
+            <div class="destination-info">
+                <p>Mangrove forests, wildlife, rivers and unique village life.</p>
+                <div class="more">Discover More →</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why">
+
+    <div class="section-title">
+        <h2>Why Choose Sarbojayi Tourism?</h2>
+        <p style="color:#b8c2cd;">
+            Travel planning with attention to your needs.
+        </p>
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <div class="icon">🤝</div>
+            <h3>Genuine & Trusted</h3>
+            <p>Transparent travel assistance and customer-focused service.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="icon">💰</div>
+            <h3>Budget Friendly</h3>
+            <p>Tour plans designed around your travel budget.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="icon">⭐</div>
+            <h3>Premium Service</h3>
+            <p>Comfortable and carefully planned travel experiences.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="icon">📞</div>
+            <h3>24/7 Support</h3>
+            <p>Support and guidance throughout your journey.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="founder" id="founder">
+
+    <div class="section-title">
+        <h2>Founder & Leadership</h2>
+    </div>
+
+    <div class="founder-box">
+
+        <div class="founder-photo">
+            <img src="./amar-das.jpg"
+                 alt="Amar Das - Founder & MD"
+                 onerror="this.style.display='none';">
+        </div>
+
+        <div class="founder-text">
+
+            <h2>Amar Das</h2>
+
+            <h3>Founder & Managing Director</h3>
+
+            <p>
+                Amar Das is the Founder & Managing Director of
+                Sarbojayi Tourism, a unit of SARBOJAYI GROUP.
+            </p>
+
+            <p>
+                Sarbojayi Tourism focuses on Domestic and International
+                travel, Group Tours, Honeymoon Tours, Corporate Tours
+                and Customized Travel Planning.
+            </p>
+
+            <p>
+                Our aim is to make travel planning simple, transparent
+                and comfortable for every traveller.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="review-section" id="reviews">
+
+    <div class="section-title">
+        <h2>Customer Reviews</h2>
+        <p>
+            Your feedback helps us improve and serve travellers better.
+        </p>
+    </div>
+
+    <div class="review-box">
+
+        <div class="stars">★★★★★</div>
+
+        <h3>Share Your Experience</h3>
+
+        <p>
+            If you have travelled with Sarbojayi Tourism,
+            we would appreciate your valuable Google review.
+        </p>
+
+        <a class="review-btn"
+           href="https://g.page/r/Cbx03MMvdidqEBM/review"
+           target="_blank">
+            ⭐ Write a Google Review
+        </a>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <div class="section-title">
+        <h2>Contact Sarbojayi Tourism</h2>
+        <p>Tell us where you want to go. We will help you plan your journey.</p>
+    </div>
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+
+            <h3>Contact Information</h3>
+
+            <div class="contact-item">
+                <strong>Call & WhatsApp</strong>
+                <a href="tel:+918100360030">+91 8100360030</a>
+            </div>
+
+            <div class="contact-item">
+                <strong>Office</strong>
+                <a href="tel:+913335764303">+91 33 3576 4303</a>
+            </div>
+
+            <div class="contact-item">
+                <strong>Emergency Support</strong>
+                <a href="tel:+918013967348">+91 8013967348</a>
+            </div>
+
+            <div class="contact-item">
+                <strong>Email</strong>
+                <a href="mailto:sarbojayitourism@gmail.com">
+                    sarbojayitourism@gmail.com
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <strong>Registered Office</strong>
+                Narendra Pur, Kolkata – 700103,
+                West Bengal, India
+            </div>
+
+            <a class="map-button"
+               href="https://maps.app.goo.gl/nSFgGNW59azwqeLF7"
+               target="_blank">
+                📍 Open Google Maps
+            </a>
+
+        </div>
+
+        <div class="contact-card">
+
+            <h3>Quick Tour Enquiry</h3>
+
+            <form onsubmit="sendWhatsApp(event)">
+
+                <input id="name"
+                       type="text"
+                       placeholder="Your Name"
+                       required>
+
+                <input id="phone"
+                       type="tel"
+                       placeholder="Mobile Number"
+                       required>
+
+                <input id="destination"
+                       type="text"
+                       placeholder="Destination">
+
+                <textarea id="message"
+                          placeholder="Tell us about your travel plan"></textarea>
+
+                <button type="submit">
+                    💬 Send Enquiry on WhatsApp
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <strong>SARBOJAYI TOURISM</strong>
+
+    <p>A UNIT OF SARBOJAYI GROUP</p>
+
+    <p>
+        Trusted Tour Operator | Domestic & International Tours
+    </p>
+
+    <p>
+        © 2026 Sarbojayi Tourism. All Rights Reserved.
+    </p>
+
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating">
+
+    <a class="float-btn phone"
+       href="tel:+918100360030"
+       title="Call">
+       📞
+    </a>
+
+    <a class="float-btn whatsapp"
+       href="https://wa.me/918100360030"
+       title="WhatsApp">
+       💬
+    </a>
+
+</div>
+
+<!-- DESTINATION MODAL -->
+<div class="modal" id="destinationModal">
+
+    <div class="modal-box">
+
+        <div class="close" onclick="closeDestination()">×</div>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+        <h3>Why is it famous?</h3>
+        <p id="modalFamous"></p>
+
+        <h3>Key Highlights</h3>
+        <ul id="modalHighlights"></ul>
+
+        <h3>Why Visit?</h3>
+        <p id="modalWhy"></p>
+
+        <a class="modal-btn"
+           href="https://wa.me/918100360030?text=Hello%20Sarbojayi%20Tourism,%20I%20want%20to%20plan%20this%20destination.">
+           💬 Plan This Trip
+        </a>
+
+    </div>
+</div>
+
+<script>
+
+/* ================= DESTINATION DATA ================= */
+
+const destinations = {
+
+    darjeeling:{
+        title:"Darjeeling & Sikkim",
+        description:"A beautiful Himalayan travel region known for mountains, tea gardens, monasteries and spectacular views.",
+        famous:"Darjeeling is famous for its Himalayan scenery, tea gardens, toy train and views of Kanchenjunga.",
+        highlights:[
+            "Darjeeling",
+            "Tiger Hill",
+            "Tea Gardens",
+            "Gangtok",
+            "Pelling",
+            "Monasteries"
+        ],
+        why:"Ideal for families, couples, honeymoon travellers and mountain lovers."
+    },
+
+    northbengal:{
+        title:"North Bengal",
+        description:"A diverse region of forests, mountains, rivers, tea gardens and peaceful offbeat villages.",
+        famous:"North Bengal is known for its Himalayan foothills, forests, wildlife and lesser-known destinations.",
+        highlights:[
+            "Sittong",
+            "Dawaipani",
+            "Chatakpur",
+            "Iccheygaon",
+            "Lava",
+            "Rishop",
+            "Pedong"
+        ],
+        why:"Perfect for travellers looking for peaceful offbeat experiences and homestay stays."
+    },
+
+    kashmir:{
+        title:"Kashmir",
+        description:"Known for its spectacular valleys, lakes, gardens and Himalayan landscapes.",
+        famous:"Kashmir is widely known for Dal Lake, beautiful valleys, gardens and mountain scenery.",
+        highlights:[
+            "Srinagar",
+            "Gulmarg",
+            "Pahalgam",
+            "Sonamarg",
+            "Dal Lake",
+            "Mughal Gardens"
+        ],
+        why:"A popular choice for families, couples and honeymoon travellers."
+    },
+
+    manali:{
+        title:"Manali",
+        description:"A Himalayan destination offering mountain scenery, rivers, valleys and adventure activities.",
+        famous:"Manali is popular for its mountains, snow, rivers and access to Himalayan adventure destinations.",
+        highlights:[
+            "Solang Valley",
+            "Rohtang Region",
+            "Old Manali",
+            "Mall Road",
+            "River Views"
+        ],
+        why:"Suitable for family holidays, couples, groups and adventure travellers."
+    },
+
+    andaman:{
+        title:"Andaman",
+        description:"A tropical island destination featuring beaches, clear waters and marine experiences.",
+        famous:"Andaman is known for beautiful beaches, island landscapes, coral reefs and water activities.",
+        highlights:[
+            "Port Blair",
+            "Swaraj Dweep",
+            "Radhanagar Beach",
+            "Neil Island",
+            "Water Activities"
+        ],
+        why:"Excellent for beach holidays, honeymoon trips and relaxing vacations."
+    },
+
+    gangtok:{
+        title:"Gangtok",
+        description:"A scenic Himalayan city surrounded by mountains, monasteries and beautiful landscapes.",
+        famous:"Gangtok is known for Himalayan views, monasteries, local culture and access to Sikkim's mountain destinations.",
+        highlights:[
+            "MG Marg",
+            "Tsomgo Lake",
+            "Baba Mandir",
+            "Monasteries",
+            "Mountain Views"
+        ],
+        why:"A great choice for families, couples and travellers exploring Sikkim."
+    },
+
+    sundarban:{
+        title:"Sundarban",
+        description:"A unique mangrove ecosystem of rivers, islands, forests and wildlife.",
+        famous:"Sundarban is famous for its mangrove forests, waterways and rich biodiversity.",
+        highlights:[
+            "Mangrove Forest",
+            "Boat Safari",
+            "Village Experience",
+            "Wildlife",
+            "River Cruises"
+        ],
+        why:"Ideal for nature lovers, families, photographers and weekend travellers."
+    }
+};
+
+function openDestination(id){
+
+    const d = destinations[id];
+
+    document.getElementById("modalTitle").innerText = d.title;
+    document.getElementById("modalDescription").innerText = d.description;
+    document.getElementById("modalFamous").innerText = d.famous;
+    document.getElementById("modalWhy").innerText = d.why;
+
+    const list = document.getElementById("modalHighlights");
+
+    list.innerHTML = "";
+
+    d.highlights.forEach(item=>{
+        const li = document.createElement("li");
+        li.innerText = item;
+        list.appendChild(li);
+    });
+
+    document.getElementById("destinationModal").style.display="block";
+}
+
+function closeDestination(){
+    document.getElementById("destinationModal").style.display="none";
+}
+
+window.onclick=function(event){
+
+    const modal=document.getElementById("destinationModal");
+
+    if(event.target===modal){
+        modal.style.display="none";
+    }
+};
+
+/* ================= WHATSAPP FORM ================= */
+
+function sendWhatsApp(event){
+
+    event.preventDefault();
+
+    const name=document.getElementById("name").value;
+    const phone=document.getElementById("phone").value;
+    const destination=document.getElementById("destination").value;
+    const message=document.getElementById("message").value;
+
+    const text =
+    "Hello Sarbojayi Tourism,%0A%0A"+
+    "Name: "+encodeURIComponent(name)+"%0A"+
+    "Phone: "+encodeURIComponent(phone)+"%0A"+
+    "Destination: "+encodeURIComponent(destination)+"%0A"+
+    "Travel Plan: "+encodeURIComponent(message);
+
+    window.open(
+        "https://wa.me/918100360030?text="+text,
+        "_blank"
+    );
+}
+
+/* ================= LANGUAGE ================= */
+
+function setLanguage(lang){
+
+    const en=document.getElementById("englishBtn");
+    const bn=document.getElementById("bengaliBtn");
+
+    if(lang==="bn"){
+
+        en.classList.remove("active");
+        bn.classList.add("active");
+
+        document.getElementById("heroBadge").innerText="বিশ্বস্ত ট্যুর অপারেটর";
+
+        document.getElementById("heroTitle").innerHTML=
+        "আরও ঘুরুন।<br><span>আরও ভালোভাবে ভ্রমণ করুন।</span>";
+
+        document.getElementById("heroText").innerText=
+        "Sarbojayi Tourism-এর সঙ্গে পরিকল্পনা করুন আপনার স্মরণীয় Domestic ও International Tour।";
+
+    }else{
+
+        bn.classList.remove("active");
+        en.classList.add("active");
+
+        document.getElementById("heroBadge").innerText=
+        "TRUSTED TOUR OPERATOR";
+
+        document.getElementById("heroTitle").innerHTML=
+        "Explore More.<br><span>Travel Better.</span>";
+
+        document.getElementById("heroText").innerText=
+        "Plan memorable journeys with Sarbojayi Tourism — your trusted travel partner for Domestic & International Tours.";
+    }
+}
+
+</script>
+
+</body>
+</html>
