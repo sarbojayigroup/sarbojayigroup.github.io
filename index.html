@@ -6,412 +6,845 @@
 
 <title>Sarbojayi Tourism | Trusted Tour Operator</title>
 
-<meta name="description" content="Sarbojayi Tourism — A Unit of SARBOJAYI GROUP. Domestic, International, Group, Honeymoon, Corporate and Customized Tours.">
+<meta name="description" content="Sarbojayi Tourism — A Unit of SARBOJAYI GROUP. Domestic, International, Group, Honeymoon, Corporate and Customized Tours across India and international destinations.">
 
 <meta name="theme-color" content="#07142b">
 
 <style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
- margin:0;
- font-family:Arial,"Noto Sans Bengali",sans-serif;
- background:#f5f7fb;
- color:#172033;
- line-height:1.6
+
+:root{
+--navy:#07142b;
+--navy2:#0c2347;
+--blue:#1e5eff;
+--gold:#d9ad55;
+--gold2:#f1d28a;
+--ink:#172033;
+--muted:#657085;
+--bg:#f5f7fb;
+--white:#fff;
+--line:#e5e9f1;
+--shadow:0 14px 40px rgba(8,24,55,.10);
+--radius:20px
 }
-a{text-decoration:none;color:inherit}
-button{cursor:pointer}
+
+*{
+box-sizing:border-box
+}
+
+html{
+scroll-behavior:smooth
+}
+
+body{
+margin:0;
+font-family:system-ui,-apple-system,"Segoe UI","Noto Sans Bengali",Arial,sans-serif;
+color:var(--ink);
+background:var(--bg);
+line-height:1.6
+}
+
+a{
+color:inherit;
+text-decoration:none
+}
+
+button,input,select,textarea{
+font:inherit
+}
+
+button{
+cursor:pointer
+}
+
+
+/* TOP BAR */
 
 #topbar{
- position:fixed;
- top:0;left:0;right:0;
- height:42px;
- background:#061126;
- color:white;
- z-index:1000;
- display:flex;
- align-items:center;
- justify-content:space-between;
- padding:0 16px;
- font-size:13px
+position:fixed;
+top:0;
+left:0;
+right:0;
+height:42px;
+background:rgba(4,13,29,.97);
+color:#fff;
+z-index:1000;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 18px;
+font-size:13px;
+border-bottom:1px solid rgba(255,255,255,.1)
+}
+
+#liveClock{
+letter-spacing:.2px
 }
 
 .lang-switch{
- display:flex;
- gap:4px;
- background:#1b2942;
- padding:3px;
- border-radius:30px
+display:flex;
+gap:4px;
+background:rgba(255,255,255,.1);
+padding:3px;
+border-radius:999px
 }
 
 .lang-switch button{
- border:0;
- background:transparent;
- color:white;
- padding:5px 12px;
- border-radius:20px
+border:0;
+background:transparent;
+color:#fff;
+padding:4px 11px;
+border-radius:999px;
+font-size:12px
 }
 
-.lang-switch .active{
- background:white;
- color:#061126;
- font-weight:bold
+.lang-switch button.active{
+background:#fff;
+color:var(--navy);
+font-weight:700
 }
+
+
+/* BRAND */
 
 #brandbar{
- position:fixed;
- top:42px;
- left:0;right:0;
- height:115px;
- background:white;
- z-index:999;
- display:flex;
- align-items:center;
- justify-content:center;
- box-shadow:0 3px 18px #0001
+position:fixed;
+top:42px;
+left:0;
+right:0;
+z-index:999;
+height:116px;
+background:linear-gradient(
+135deg,
+#fff 0%,
+#f7fbff 55%,
+#eef4ff 100%
+);
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
+border-bottom:1px solid rgba(10,32,70,.1);
+box-shadow:0 5px 25px rgba(0,0,0,.07)
+}
+
+#brandbar:before,
+#brandbar:after{
+content:"";
+position:absolute;
+border-radius:50%;
+filter:blur(2px);
+opacity:.45;
+animation:floatGlow 8s ease-in-out infinite
+}
+
+#brandbar:before{
+width:250px;
+height:250px;
+background:radial-gradient(
+circle,
+rgba(30,94,255,.16),
+transparent 68%
+);
+left:8%;
+top:-120px
+}
+
+#brandbar:after{
+width:280px;
+height:280px;
+background:radial-gradient(
+circle,
+rgba(217,173,85,.18),
+transparent 68%
+);
+right:8%;
+bottom:-160px;
+animation-delay:-3s
+}
+
+@keyframes floatGlow{
+50%{
+transform:translateY(18px) scale(1.05)
+}
 }
 
 #brandLogo{
- width:min(700px,85vw);
- max-height:100px;
- object-fit:contain
+position:relative;
+z-index:2;
+width:min(700px,78vw);
+max-height:100px;
+object-fit:contain
 }
 
-main{padding-top:157px}
 
-.hero{
- background:
- radial-gradient(circle at 85% 20%,#1e5eff33,transparent 35%),
- linear-gradient(135deg,#07142b,#0c2347,#102f5d);
- color:white;
- padding:75px 20px;
- min-height:540px
-}
+/* GENERAL */
 
-.container{
- max-width:1180px;
- margin:auto
-}
-
-.hero-grid{
- display:grid;
- grid-template-columns:1.2fr .8fr;
- gap:40px;
- align-items:center
-}
-
-.eyebrow{
- color:#f1d28a;
- font-weight:bold;
- letter-spacing:1px
-}
-
-h1{
- font-size:clamp(40px,6vw,70px);
- line-height:1.05;
- margin:10px 0
-}
-
-h2{
- font-size:38px;
- margin-bottom:12px
-}
-
-.hero p{
- font-size:18px;
- color:#dce7f7
-}
-
-.btns{
- display:flex;
- flex-wrap:wrap;
- gap:12px;
- margin-top:25px
-}
-
-.btn{
- display:inline-block;
- padding:12px 20px;
- border-radius:30px;
- font-weight:bold
-}
-
-.primary{background:#d9ad55;color:#17130a}
-.secondary{background:white;color:#07142b}
-.outline{
- border:1px solid #ffffff66;
- color:white
-}
-
-.quick-box{
- background:white;
- color:#172033;
- padding:25px;
- border-radius:22px;
- box-shadow:0 20px 50px #0004
+main{
+padding-top:158px
 }
 
 section{
- padding:70px 20px
+padding:72px 18px;
+scroll-margin-top:165px
+}
+
+.container{
+max-width:1180px;
+margin:auto
+}
+
+h1{
+font-size:clamp(38px,6vw,70px);
+line-height:1.05;
+margin:12px 0 18px
+}
+
+h2{
+font-size:clamp(28px,4vw,42px);
+line-height:1.15;
+margin:0 0 14px
+}
+
+h3{
+margin:0 0 8px
+}
+
+.muted{
+color:var(--muted)
+}
+
+.center{
+text-align:center
 }
 
 .section-head{
- text-align:center;
- max-width:750px;
- margin:0 auto 35px
+max-width:760px;
+margin:0 auto 34px;
+text-align:center
 }
 
+.gold{
+color:#a97818
+}
+
+
+/* HERO */
+
+.hero{
+min-height:540px;
+display:flex;
+align-items:center;
+background:
+radial-gradient(
+circle at 85% 20%,
+rgba(30,94,255,.16),
+transparent 35%
+),
+linear-gradient(
+135deg,
+#07142b 0%,
+#0c2347 55%,
+#102f5d 100%
+);
+color:#fff;
+position:relative;
+overflow:hidden
+}
+
+.hero:after{
+content:"";
+position:absolute;
+inset:auto -10% -55% -10%;
+height:260px;
+background:rgba(255,255,255,.05);
+transform:rotate(-4deg)
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:40px;
+align-items:center;
+position:relative;
+z-index:2
+}
+
+.eyebrow{
+color:var(--gold2);
+font-weight:800;
+letter-spacing:1.5px;
+text-transform:uppercase;
+font-size:13px
+}
+
+.hero p{
+font-size:18px;
+color:#dfe8f7;
+max-width:650px
+}
+
+.btns{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:24px
+}
+
+.btn{
+border:0;
+border-radius:999px;
+padding:12px 20px;
+font-weight:800;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:8px
+}
+
+.primary{
+background:var(--gold);
+color:#17130a
+}
+
+.secondary{
+background:#fff;
+color:var(--navy)
+}
+
+.outline{
+background:transparent;
+border:1px solid rgba(255,255,255,.35);
+color:#fff
+}
+
+
+/* QUICK BOX */
+
+.quick-box{
+background:#fff;
+color:var(--ink);
+padding:25px;
+border-radius:24px;
+box-shadow:0 20px 50px rgba(0,0,0,.18)
+}
+
+.quick-box h3{
+font-size:22px
+}
+
+.quick-box p{
+color:var(--muted)
+}
+
+.search-row{
+display:flex;
+gap:8px;
+margin:14px 0
+}
+
+.search-row input{
+flex:1;
+min-width:0;
+border:1px solid var(--line);
+border-radius:12px;
+padding:13px 14px;
+outline:none
+}
+
+.search-row button{
+background:var(--blue);
+color:#fff;
+border:0;
+border-radius:12px;
+padding:0 17px;
+font-weight:800
+}
+
+.chips{
+display:flex;
+flex-wrap:wrap;
+gap:7px;
+margin-top:10px
+}
+
+.chip{
+border:1px solid var(--line);
+background:#f7f9fc;
+border-radius:999px;
+padding:6px 10px;
+font-size:12px;
+cursor:pointer
+}
+
+
+/* CARDS */
+
 .grid{
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:18px
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px
 }
 
 .card{
- background:white;
- border:1px solid #e5e9f1;
- border-radius:20px;
- padding:25px;
- box-shadow:0 10px 35px #08183712
+background:#fff;
+border:1px solid var(--line);
+border-radius:var(--radius);
+padding:24px;
+box-shadow:var(--shadow)
 }
 
 .card:hover{
- transform:translateY(-3px);
- transition:.2s
+transform:translateY(-3px);
+transition:.2s
 }
 
 .icon{
- font-size:35px
+font-size:34px;
+margin-bottom:8px
 }
 
-.center{text-align:center}
-
-.destination{
- background:linear-gradient(145deg,#fff,#eef4ff)
+.service-card{
+min-height:175px
 }
+
+.service-card p{
+color:var(--muted)
+}
+
+
+/* DESTINATION IMAGE CARDS */
+
+.destination-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px
+}
+
+.destination-card{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+border:1px solid var(--line);
+box-shadow:var(--shadow)
+}
+
+.destination-card img{
+width:100%;
+height:210px;
+object-fit:cover;
+display:block
+}
+
+.destination-content{
+padding:20px
+}
+
+.destination-content p{
+color:var(--muted);
+font-size:14px
+}
+
+
+/* NORTH BENGAL */
+
+.destination-section{
+background:linear-gradient(
+180deg,
+#f7fbff,
+#eef4ff
+)
+}
+
+.region-tabs{
+display:flex;
+justify-content:center;
+gap:8px;
+margin-bottom:25px;
+flex-wrap:wrap
+}
+
+.tab{
+border:1px solid var(--line);
+background:#fff;
+border-radius:999px;
+padding:9px 18px;
+font-weight:800
+}
+
+.tab.active{
+background:var(--navy);
+color:#fff
+}
+
+
+/* PLAN */
 
 .plan{
- background:#07142b;
- color:white
+background:#07142b;
+color:#fff
 }
 
 .plan .card{
- background:#ffffff0d;
- color:white;
- border-color:#ffffff22
+background:rgba(255,255,255,.07);
+border-color:rgba(255,255,255,.12);
+color:#fff;
+box-shadow:none
+}
+
+.plan label{
+display:block;
+font-weight:700;
+font-size:13px;
+margin-bottom:5px
 }
 
 .form{
- display:grid;
- grid-template-columns:1fr 1fr;
- gap:15px
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:14px
 }
 
 .form .full{
- grid-column:1/-1
-}
-
-.form label{
- font-weight:bold
+grid-column:1/-1
 }
 
 .form input,
 .form select,
 .form textarea{
- width:100%;
- padding:12px;
- border-radius:10px;
- border:1px solid #ddd;
- margin-top:5px
+width:100%;
+border:1px solid rgba(255,255,255,.16);
+border-radius:11px;
+padding:12px;
+margin-top:5px;
+background:#fff;
+color:#172033
 }
 
 .form textarea{
- min-height:120px
+min-height:120px;
+resize:vertical
 }
 
+
+/* LEADER */
+
 .leader{
- display:grid;
- grid-template-columns:150px 1fr;
- gap:25px;
- align-items:center
+display:grid;
+grid-template-columns:150px 1fr;
+gap:25px;
+align-items:center
 }
 
 .leader img{
- width:150px;
- height:150px;
- object-fit:cover;
- border-radius:50%;
- border:5px solid white;
- box-shadow:0 8px 25px #0002
+width:150px;
+height:150px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #fff;
+box-shadow:0 8px 24px rgba(0,0,0,.12)
 }
 
+
+/* STEPS */
+
+.steps{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px
+}
+
+.step{
+position:relative;
+padding:25px 25px 25px 75px
+}
+
+.step-number{
+position:absolute;
+left:20px;
+top:25px;
+width:42px;
+height:42px;
+border-radius:50%;
+background:var(--navy);
+color:#fff;
+display:grid;
+place-items:center;
+font-weight:900
+}
+
+
+/* FAQ */
+
+.faq details{
+background:#fff;
+border:1px solid var(--line);
+border-radius:14px;
+padding:16px 18px;
+margin:10px 0
+}
+
+.faq summary{
+font-weight:800;
+cursor:pointer
+}
+
+
+/* FOOTER */
+
 footer{
- background:#040d1d;
- color:#dce6f6;
- padding:55px 20px 25px
+background:#040d1d;
+color:#dce6f6;
+padding:55px 18px 25px
 }
 
 .footer-grid{
- display:grid;
- grid-template-columns:1.4fr 1fr 1fr;
- gap:30px
+display:grid;
+grid-template-columns:1.3fr 1fr 1fr 1fr;
+gap:30px
 }
 
-footer h3,footer h4{color:white}
+footer h3,
+footer h4{
+color:#fff
+}
 
 footer a{
- display:block;
- color:#bdc9da;
- margin:7px 0
+display:block;
+color:#bdc9da;
+margin:7px 0
 }
 
 .copyright{
- border-top:1px solid #ffffff1a;
- margin-top:30px;
- padding-top:18px;
- text-align:center;
- color:#98a6bb;
- font-size:13px
+border-top:1px solid rgba(255,255,255,.1);
+margin-top:30px;
+padding-top:18px;
+text-align:center;
+color:#98a6bb;
+font-size:13px
 }
 
+
+/* FLOATING BUTTONS */
+
 .float-actions{
- position:fixed;
- right:15px;
- bottom:18px;
- z-index:1001;
- display:flex;
- flex-direction:column;
- gap:10px
+position:fixed;
+right:16px;
+bottom:18px;
+z-index:1001;
+display:flex;
+flex-direction:column;
+gap:10px
 }
 
 .float-btn{
- width:52px;
- height:52px;
- border-radius:50%;
- display:grid;
- place-items:center;
- color:white;
- font-size:22px;
- box-shadow:0 8px 22px #0004
+width:52px;
+height:52px;
+border-radius:50%;
+display:grid;
+place-items:center;
+color:#fff;
+font-size:22px;
+box-shadow:0 8px 22px rgba(0,0,0,.25);
+border:2px solid #fff
 }
 
-.call{background:#1e5eff}
-.wa{background:#159447}
+.call{
+background:#1e5eff
+}
+
+.wa{
+background:#159447
+}
+
+
+/* WELCOME */
 
 #welcome{
- position:fixed;
- inset:0;
- background:#030a18bb;
- z-index:2000;
- display:none;
- align-items:center;
- justify-content:center;
- padding:20px
+position:fixed;
+inset:0;
+background:rgba(3,10,24,.72);
+backdrop-filter:blur(5px);
+z-index:2000;
+display:none;
+align-items:center;
+justify-content:center;
+padding:18px
 }
 
 .modal{
- background:white;
- max-width:700px;
- width:100%;
- padding:30px;
- border-radius:25px;
- position:relative
+background:#fff;
+border-radius:24px;
+max-width:760px;
+width:100%;
+padding:28px;
+box-shadow:0 25px 80px rgba(0,0,0,.35);
+position:relative
 }
 
 .close{
- position:absolute;
- right:15px;
- top:12px;
- border:0;
- background:#eee;
- border-radius:50%;
- width:35px;
- height:35px
+position:absolute;
+right:14px;
+top:12px;
+border:0;
+background:#f1f4f8;
+width:34px;
+height:34px;
+border-radius:50%
 }
 
 .modal-grid{
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:10px
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+margin-top:18px
 }
 
 .modal-option{
- background:#f4f7fc;
- border:1px solid #ddd;
- border-radius:14px;
- padding:18px;
- text-align:center;
- font-weight:bold
+border:1px solid var(--line);
+background:#f9fbff;
+border-radius:14px;
+padding:16px;
+text-align:center;
+font-weight:800;
+cursor:pointer
 }
 
-@media(max-width:800px){
- .hero-grid,
- .grid,
- .footer-grid{
-  grid-template-columns:1fr
- }
 
- .form{
-  grid-template-columns:1fr
- }
+/* TOAST */
 
- .leader{
-  grid-template-columns:100px 1fr
- }
-
- .leader img{
-  width:100px;
-  height:100px
- }
+.toast{
+position:fixed;
+left:50%;
+bottom:24px;
+transform:translateX(-50%) translateY(100px);
+background:#07142b;
+color:#fff;
+padding:12px 18px;
+border-radius:999px;
+z-index:3000;
+opacity:0;
+transition:.3s
 }
 
-@media(max-width:600px){
- #topbar{
-  height:38px;
-  font-size:11px
- }
-
- #brandbar{
-  top:38px;
-  height:82px
- }
-
- #brandLogo{
-  max-height:70px;
-  width:85vw
- }
-
- main{
-  padding-top:120px
- }
-
- h1{
-  font-size:42px
- }
-
- h2{
-  font-size:30px
- }
-
- .hero{
-  padding:55px 15px
- }
-
- section{
-  padding:55px 15px
- }
-
- .modal-grid{
-  grid-template-columns:1fr
- }
+.toast.show{
+transform:translateX(-50%) translateY(0);
+opacity:1
 }
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.hero-grid,
+.grid,
+.destination-grid,
+.footer-grid,
+.steps{
+grid-template-columns:1fr 1fr
+}
+
+.leader{
+grid-template-columns:110px 1fr
+}
+
+.leader img{
+width:110px;
+height:110px
+}
+
+}
+
+@media(max-width:650px){
+
+#topbar{
+height:38px;
+padding:0 10px;
+font-size:11px
+}
+
+#brandbar{
+top:38px;
+height:82px
+}
+
+#brandLogo{
+width:82vw;
+max-height:70px
+}
+
+main{
+padding-top:120px
+}
+
+section{
+padding:55px 14px;
+scroll-margin-top:125px
+}
+
+.hero{
+min-height:auto;
+padding-top:50px;
+padding-bottom:55px
+}
+
+.hero-grid,
+.grid,
+.destination-grid,
+.footer-grid,
+.steps,
+.form{
+grid-template-columns:1fr
+}
+
+.modal-grid{
+grid-template-columns:1fr
+}
+
+.leader{
+grid-template-columns:1fr;
+text-align:center
+}
+
+.leader img{
+margin:auto
+}
+
+h1{
+font-size:42px
+}
+
+.float-actions{
+right:10px;
+bottom:12px
+}
+
+.float-btn{
+width:48px;
+height:48px
+}
+
+}
+
+
+/* BENGALI MODE */
+
+.bn{
+font-family:"Noto Sans Bengali",
+"SolaimanLipi",
+Arial,
+sans-serif
+}
+
 </style>
 </head>
 
+
 <body>
 
+
 <!-- TOP BAR -->
+
 <div id="topbar">
 
 <div>
@@ -419,24 +852,32 @@ footer a{
 </div>
 
 <div class="lang-switch">
-<button id="enBtn" class="active" onclick="setLang('en')">
+
+<button
+id="enBtn"
+class="active"
+onclick="setLang('en')">
 English
 </button>
 
-<button id="bnBtn" onclick="setLang('bn')">
+<button
+id="bnBtn"
+onclick="setLang('bn')">
 বাংলা
 </button>
+
 </div>
 
 </div>
 
 
 <!-- LOGO -->
+
 <div id="brandbar">
 
 <img
 id="brandLogo"
-src="logo.png"
+src="https://raw.githubusercontent.com/sarbojayigroup/sarbojayigroup.github.io/main/logo.png"
 alt="Sarbojayi Tourism Logo">
 
 </div>
@@ -444,7 +885,9 @@ alt="Sarbojayi Tourism Logo">
 
 <main>
 
+
 <!-- HERO -->
+
 <section class="hero">
 
 <div class="container hero-grid">
@@ -461,7 +904,7 @@ Travel Better.
 </h1>
 
 <p>
-A Unit of SARBOJAYI GROUP
+<strong>A Unit of SARBOJAYI GROUP</strong>
 </p>
 
 <p>
@@ -476,19 +919,19 @@ Corporate and Customized Tours.
 class="btn primary"
 href="https://wa.me/918100360030"
 target="_blank">
-WhatsApp Us
+💬 WhatsApp Us
 </a>
 
 <a
 class="btn secondary"
 href="tel:+918100360030">
-Call Now
+📞 Call Now
 </a>
 
 <a
 class="btn outline"
 href="#plan">
-Customize Your Tour
+🧳 Customize Your Tour
 </a>
 
 </div>
@@ -503,24 +946,56 @@ Plan Your Journey
 </h3>
 
 <p>
-Tell us what type of trip you are looking for.
+Search or select the destination you are
+interested in.
 </p>
 
-<div class="btns">
+<div class="search-row">
 
-<a class="btn primary" href="#services">
-Domestic Tour
-</a>
+<input
+id="destinationSearch"
+placeholder="Search destination..."
+onkeyup="searchDestination()">
 
-<a class="btn primary" href="#services">
-International Tour
-</a>
-
-<a class="btn primary" href="#services">
-Honeymoon
-</a>
+<button
+onclick="searchDestination()">
+Search
+</button>
 
 </div>
+
+
+<div class="chips">
+
+<span class="chip"
+onclick="selectDestination('Kashmir')">
+Kashmir
+</span>
+
+<span class="chip"
+onclick="selectDestination('Manali')">
+Manali
+</span>
+
+<span class="chip"
+onclick="selectDestination('Darjeeling')">
+Darjeeling
+</span>
+
+<span class="chip"
+onclick="selectDestination('North Bengal')">
+North Bengal
+</span>
+
+<span class="chip"
+onclick="selectDestination('Andaman')">
+Andaman
+</span>
+
+</div>
+
+<div id="searchResults"
+class="results"></div>
 
 </div>
 
@@ -530,17 +1005,21 @@ Honeymoon
 
 
 <!-- SERVICES -->
+
 <section id="services">
 
 <div class="container">
 
 <div class="section-head">
 
-<h2>Our Services</h2>
+<h2>
+Our Travel Services
+</h2>
 
 <p>
-Travel solutions designed around your destination,
-budget and requirements.
+From short family holidays to international
+journeys, we help plan your trip around your
+requirements.
 </p>
 
 </div>
@@ -548,40 +1027,101 @@ budget and requirements.
 
 <div class="grid">
 
-<div class="card center">
+
+<div class="card service-card center">
+
 <div class="icon">✈️</div>
-<h3>Personal Tour</h3>
-<p>Private and personalized travel experiences.</p>
+
+<h3>
+Personal Tour
+</h3>
+
+<p>
+Private travel plans designed around your
+preferred destination, dates, hotels and
+activities.
+</p>
+
 </div>
 
-<div class="card center">
+
+<div class="card service-card center">
+
 <div class="icon">👨‍👩‍👧‍👦</div>
-<h3>Group Tour</h3>
-<p>Comfortable and well-planned group journeys.</p>
+
+<h3>
+Group Tour
+</h3>
+
+<p>
+Comfortable and organized group travel for
+families, friends, students and other groups.
+</p>
+
 </div>
 
-<div class="card center">
+
+<div class="card service-card center">
+
 <div class="icon">💍</div>
-<h3>Honeymoon Tour</h3>
-<p>Romantic journeys planned for couples.</p>
+
+<h3>
+Honeymoon Tour
+</h3>
+
+<p>
+Romantic travel experiences with customized
+stays, sightseeing and transfers.
+</p>
+
 </div>
 
-<div class="card center">
+
+<div class="card service-card center">
+
 <div class="icon">🏢</div>
-<h3>Corporate Tour</h3>
-<p>Corporate travel and group arrangements.</p>
+
+<h3>
+Corporate Tour
+</h3>
+
+<p>
+Corporate travel arrangements, group movement
+and customized business travel planning.
+</p>
+
 </div>
 
-<div class="card center">
+
+<div class="card service-card center">
+
 <div class="icon">🧭</div>
-<h3>Customized Tour</h3>
-<p>Build your own itinerary with our guidance.</p>
+
+<h3>
+Customized Tour
+</h3>
+
+<p>
+Tell us your destination, budget and
+requirements—we help build your itinerary.
+</p>
+
 </div>
 
-<div class="card center">
+
+<div class="card service-card center">
+
 <div class="icon">🌎</div>
-<h3>International Tour</h3>
-<p>Explore destinations beyond India.</p>
+
+<h3>
+International Tour
+</h3>
+
+<p>
+Customized international travel planning
+with accommodation, sightseeing and support.
+</p>
+
 </div>
 
 </div>
@@ -591,18 +1131,241 @@ budget and requirements.
 </section>
 
 
-<!-- DESTINATIONS -->
-<section class="destination" id="destinations">
+<!-- DESTINATION INTRO -->
+
+<section
+class="destination-section"
+id="destinations">
 
 <div class="container">
 
 <div class="section-head">
 
-<h2>Popular Destinations</h2>
+<h2>
+Explore Our Destinations
+</h2>
 
 <p>
-Discover beautiful destinations across India
-and international locations.
+Discover mountains, valleys, beaches and
+beautiful experiences across India and beyond.
+</p>
+
+</div>
+
+
+<div class="destination-grid">
+
+
+<!-- NORTH BENGAL -->
+
+<div class="destination-card">
+
+<img
+src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1000&q=85"
+alt="North Bengal">
+
+<div class="destination-content">
+
+<h3>
+🏔️ North Bengal
+</h3>
+
+<p>
+Darjeeling, Kalimpong, Lava, Rishop,
+Sittong, Chatakpur, Dawaipani, Iccheygaon,
+Ramdhura, Pedong, Loleygaon, Sillery Gaon,
+Kolakham and other offbeat destinations.
+</p>
+
+<a
+class="btn primary"
+href="#northbengal">
+Explore North Bengal
+</a>
+
+</div>
+
+</div>
+
+
+<!-- KASHMIR -->
+
+<div class="destination-card">
+
+<img
+src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1000&q=85"
+alt="Kashmir">
+
+<div class="destination-content">
+
+<h3>
+🏔️ Kashmir
+</h3>
+
+<p>
+Srinagar, Gulmarg, Pahalgam, Sonamarg,
+Katra and other beautiful Himalayan
+destinations.
+</p>
+
+<a
+class="btn primary"
+href="#plan">
+Plan Kashmir
+</a>
+
+</div>
+
+</div>
+
+
+<!-- MANALI -->
+
+<div class="destination-card">
+
+<img
+src="https://images.unsplash.com/photo-1627894483216-2138af692e27?auto=format&fit=crop&w=1000&q=85"
+alt="Manali">
+
+<div class="destination-content">
+
+<h3>
+🏔️ Manali
+</h3>
+
+<p>
+Mountain holidays, family trips,
+honeymoon journeys and customized
+Himachal travel plans.
+</p>
+
+<a
+class="btn primary"
+href="#plan">
+Plan Manali
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ANDAMAN -->
+
+<div class="destination-card">
+
+<img
+src="https://images.unsplash.com/photo-1582972236019-ea9e5a4f4e6b?auto=format&fit=crop&w=1000&q=85"
+alt="Andaman">
+
+<div class="destination-content">
+
+<h3>
+🏝️ Andaman
+</h3>
+
+<p>
+Beautiful islands, beaches, sightseeing,
+water activities and customized island
+holidays.
+</p>
+
+<a
+class="btn primary"
+href="#plan">
+Plan Andaman
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PAN INDIA -->
+
+<div class="destination-card">
+
+<img
+src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1000&q=85"
+alt="India">
+
+<div class="destination-content">
+
+<h3>
+🇮🇳 Pan India
+</h3>
+
+<p>
+Travel across India with customized
+itineraries for families, couples,
+groups and corporate travellers.
+</p>
+
+<a
+class="btn primary"
+href="#plan">
+Plan My Trip
+</a>
+
+</div>
+
+</div>
+
+
+<!-- INTERNATIONAL -->
+
+<div class="destination-card">
+
+<img
+src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=85"
+alt="International Travel">
+
+<div class="destination-content">
+
+<h3>
+🌏 International
+</h3>
+
+<p>
+Explore international destinations with
+customized tour planning and travel
+assistance.
+</p>
+
+<a
+class="btn primary"
+href="#plan">
+Enquire Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- NORTH BENGAL -->
+
+<section
+id="northbengal">
+
+<div class="container">
+
+<div class="section-head">
+
+<h2>
+North Bengal Offbeat Destinations
+</h2>
+
+<p>
+Experience peaceful mountain villages,
+homestays, forests, rivers and hidden
+destinations away from crowded tourist routes.
 </p>
 
 </div>
@@ -610,52 +1373,111 @@ and international locations.
 
 <div class="grid">
 
+
 <div class="card">
-<h3>🏔️ North Bengal</h3>
-<p>
-Darjeeling, Kalimpong, Lava, Rishop,
-Sittong, Chatakpur, Dawaipani,
-Iccheygaon, Ramdhura and more.
+<h3>🌿 Sittong</h3>
+<p class="muted">
+Orange orchards, mountain views, peaceful
+homestays and village experiences.
 </p>
 </div>
 
+
 <div class="card">
-<h3>🏔️ Kashmir</h3>
-<p>
-Kashmir, Katra, Srinagar, Gulmarg,
-Pahalgam and beautiful Himalayan experiences.
+<h3>🌲 Upper Sittong</h3>
+<p class="muted">
+Nature trails, mountain landscapes and
+quiet Himalayan surroundings.
 </p>
 </div>
 
+
 <div class="card">
-<h3>🏔️ Manali</h3>
-<p>
-Mountain holidays, family trips,
-honeymoon journeys and customized packages.
+<h3>🌄 Dawaipani</h3>
+<p class="muted">
+A peaceful mountain destination with
+beautiful sunrise and Kanchenjunga views.
 </p>
 </div>
 
+
 <div class="card">
-<h3>🏝️ Andaman</h3>
-<p>
-Island holidays, beaches, sightseeing
-and customized travel plans.
+<h3>🌲 Chatakpur</h3>
+<p class="muted">
+Forest, silence, village life and
+spectacular mountain surroundings.
 </p>
 </div>
 
+
 <div class="card">
-<h3>🌏 International</h3>
-<p>
-International destinations with customized
-tour planning and support.
+<h3>🌄 Iccheygaon</h3>
+<p class="muted">
+A beautiful Himalayan village ideal for
+slow travel and nature lovers.
 </p>
 </div>
 
+
 <div class="card">
-<h3>🇮🇳 Pan India</h3>
-<p>
-Travel across India with a plan designed
-around your requirements.
+<h3>🏔️ Ramdhura</h3>
+<p class="muted">
+Peaceful homestays and panoramic mountain
+views in an offbeat setting.
+</p>
+</div>
+
+
+<div class="card">
+<h3>🌲 Pedong</h3>
+<p class="muted">
+A quiet Himalayan destination surrounded
+by forests, hills and local culture.
+</p>
+</div>
+
+
+<div class="card">
+<h3>🌋 Lava</h3>
+<p class="muted">
+Forests, monasteries, cool weather and
+beautiful Himalayan landscapes.
+</p>
+</div>
+
+
+<div class="card">
+<h3>🏔️ Rishop</h3>
+<p class="muted">
+Mountain views, peaceful surroundings and
+one of North Bengal's popular offbeat stays.
+</p>
+</div>
+
+
+<div class="card">
+<h3>🌲 Sillery Gaon</h3>
+<p class="muted">
+Quiet village life, forest trails and
+beautiful Himalayan scenery.
+</p>
+</div>
+
+
+<div class="card">
+<h3>🌳 Loleygaon</h3>
+<p class="muted">
+Forests, canopy walks, nature and
+peaceful mountain surroundings.
+</p>
+</div>
+
+
+<div class="card">
+<h3>🌲 Kolakham</h3>
+<p class="muted">
+Dense forests, mountain views and
+a peaceful offbeat Himalayan experience.
 </p>
 </div>
 
@@ -667,17 +1489,20 @@ around your requirements.
 
 
 <!-- WHY US -->
+
 <section>
 
 <div class="container">
 
 <div class="section-head">
 
-<h2>Why Sarbojayi Tourism?</h2>
+<h2>
+Why Choose Sarbojayi Tourism?
+</h2>
 
 <p>
-Your journey deserves genuine planning,
-transparent guidance and dependable support.
+Our focus is on genuine travel assistance,
+personalized planning and dependable support.
 </p>
 
 </div>
@@ -685,40 +1510,112 @@ transparent guidance and dependable support.
 
 <div class="grid">
 
-<div class="card center">
-<div class="icon">🤝</div>
-<h3>Genuine & Trusted</h3>
-<p>Focused on genuine travel assistance.</p>
-</div>
 
 <div class="card center">
-<div class="icon">💰</div>
-<h3>Budget Friendly</h3>
-<p>Plans designed according to your budget.</p>
+
+<div class="icon">
+🤝
 </div>
 
-<div class="card center">
-<div class="icon">⭐</div>
-<h3>Premium Service</h3>
-<p>Personal attention throughout your journey.</p>
+<h3>
+Genuine & Trusted
+</h3>
+
+<p class="muted">
+Travel assistance focused on genuine
+service and transparent communication.
+</p>
+
 </div>
 
-<div class="card center">
-<div class="icon">📞</div>
-<h3>24/7 Support</h3>
-<p>Support and guidance whenever required.</p>
-</div>
 
 <div class="card center">
-<div class="icon">🏨</div>
-<h3>Hotels & Homestays</h3>
-<p>Wide choice of accommodation options.</p>
+
+<div class="icon">
+💰
 </div>
 
+<h3>
+Budget Friendly
+</h3>
+
+<p class="muted">
+Travel plans can be designed around
+different budgets and requirements.
+</p>
+
+</div>
+
+
 <div class="card center">
-<div class="icon">🧳</div>
-<h3>Customized Planning</h3>
-<p>Your trip can be planned around your needs.</p>
+
+<div class="icon">
+⭐
+</div>
+
+<h3>
+Premium Service
+</h3>
+
+<p class="muted">
+Personal attention from planning through
+your journey.
+</p>
+
+</div>
+
+
+<div class="card center">
+
+<div class="icon">
+📞
+</div>
+
+<h3>
+24/7 Support & Guidance
+</h3>
+
+<p class="muted">
+Support and guidance whenever you
+need assistance during your journey.
+</p>
+
+</div>
+
+
+<div class="card center">
+
+<div class="icon">
+🏨
+</div>
+
+<h3>
+Hotels & Homestays
+</h3>
+
+<p class="muted">
+Accommodation options including hotels,
+homestays and customized stays.
+</p>
+
+</div>
+
+
+<div class="card center">
+
+<div class="icon">
+🧳
+</div>
+
+<h3>
+Customized Planning
+</h3>
+
+<p class="muted">
+Your destination, your dates and your
+requirements can shape the itinerary.
+</p>
+
 </div>
 
 </div>
@@ -728,18 +1625,107 @@ transparent guidance and dependable support.
 </section>
 
 
-<!-- TOUR PLAN -->
-<section class="plan" id="plan">
+<!-- HOW IT WORKS -->
+
+<section
+style="background:#eef4ff">
 
 <div class="container">
 
 <div class="section-head">
 
-<h2>Customize Your Tour</h2>
+<h2>
+How We Plan Your Trip
+</h2>
 
 <p>
-Send us your requirements and our team can
-help prepare your travel plan.
+A simple process from your first enquiry
+to your journey.
+</p>
+
+</div>
+
+
+<div class="steps">
+
+
+<div class="card step">
+
+<div class="step-number">
+1
+</div>
+
+<h3>
+Tell Us Your Requirement
+</h3>
+
+<p class="muted">
+Share your destination, travel date,
+number of travellers and preferences.
+</p>
+
+</div>
+
+
+<div class="card step">
+
+<div class="step-number">
+2
+</div>
+
+<h3>
+We Customize
+</h3>
+
+<p class="muted">
+We discuss suitable hotels,
+transport, sightseeing and itinerary options.
+</p>
+
+</div>
+
+
+<div class="card step">
+
+<div class="step-number">
+3
+</div>
+
+<h3>
+Travel With Support
+</h3>
+
+<p class="muted">
+Once your plan is confirmed, our team
+remains available for travel assistance.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TOUR PLANNER -->
+
+<section
+class="plan"
+id="plan">
+
+<div class="container">
+
+<div class="section-head">
+
+<h2>
+Customize Your Tour
+</h2>
+
+<p>
+Tell us about your travel requirement.
+Your enquiry will open directly in WhatsApp.
 </p>
 
 </div>
@@ -747,59 +1733,124 @@ help prepare your travel plan.
 
 <div class="card">
 
-<form class="form" onsubmit="sendPlan(event)">
+<form
+class="form"
+onsubmit="sendPlan(event)">
+
 
 <div>
-<label>Name</label>
-<input id="name" required>
+
+<label>
+Name
+</label>
+
+<input
+id="name"
+required
+placeholder="Your name">
+
 </div>
 
-<div>
-<label>Phone</label>
-<input id="phone" required>
-</div>
 
 <div>
-<label>Travel Type</label>
+
+<label>
+Phone
+</label>
+
+<input
+id="phone"
+required
+placeholder="Your mobile number">
+
+</div>
+
+
+<div>
+
+<label>
+Tour Type
+</label>
 
 <select id="type">
 
 <option>Personal Tour</option>
+
 <option>Group Tour</option>
+
 <option>Honeymoon Tour</option>
+
 <option>Corporate Tour</option>
+
 <option>Customized Tour</option>
 
 </select>
 
 </div>
 
-<div>
-<label>Destination</label>
-<input id="destination" placeholder="e.g. Kashmir">
-</div>
 
 <div>
-<label>Travel Date</label>
-<input id="date" type="date">
+
+<label>
+Destination
+</label>
+
+<input
+id="destination"
+placeholder="e.g. Kashmir">
+
 </div>
 
+
 <div>
-<label>Travellers</label>
-<input id="travellers" type="number" min="1">
+
+<label>
+Travel Date
+</label>
+
+<input
+id="date"
+type="date">
+
 </div>
+
+
+<div>
+
+<label>
+Number of Travellers
+</label>
+
+<input
+id="travellers"
+type="number"
+min="1"
+placeholder="e.g. 4">
+
+</div>
+
 
 <div class="full">
-<label>Your Requirement</label>
-<textarea id="message"></textarea>
+
+<label>
+Your Requirement
+</label>
+
+<textarea
+id="message"
+placeholder="Tell us about your preferred hotel, transport, budget, sightseeing or anything else..."></textarea>
+
 </div>
+
 
 <div class="full">
 
 <button
 class="btn primary"
 type="submit">
-Send Enquiry on WhatsApp
+
+💬 Send Enquiry on WhatsApp
+
 </button>
 
 </div>
@@ -814,38 +1865,58 @@ Send Enquiry on WhatsApp
 
 
 <!-- FOUNDER -->
+
 <section>
 
 <div class="container">
 
 <div class="section-head">
-<h2>About Sarbojayi Tourism</h2>
+
+<h2>
+About Sarbojayi Tourism
+</h2>
+
+<p>
+Sarbojayi Tourism — A Unit of SARBOJAYI GROUP
+</p>
+
 </div>
 
 
 <div class="card leader">
 
+
 <img
-src="amar-das.jpg"
-alt="Amar Das">
+src="https://raw.githubusercontent.com/sarbojayigroup/sarbojayigroup.github.io/main/amar-das.jpg"
+alt="Amar Das - Founder & MD">
+
 
 <div>
 
-<h2>Amar Das</h2>
+<h2>
+Amar Das
+</h2>
 
-<h3>Founder & MD</h3>
+<h3>
+Founder & MD
+</h3>
 
 <p>
-Sarbojayi Tourism is a unit of
-<strong>SARBOJAYI GROUP</strong>,
-providing domestic, international,
-group, honeymoon, corporate and
-customized travel services.
+<strong>SARBOJAYI GROUP</strong> is the parent
+organization, with Sarbojayi Tourism serving
+as its tourism unit.
 </p>
 
 <p>
-Our aim is to make travel planning
-simple, genuine and dependable.
+Sarbojayi Tourism provides Personal Tour,
+Group Tour, Honeymoon Tour, Corporate Tour
+and Customized Tour services across India
+and international destinations.
+</p>
+
+<p>
+Our objective is to make travel planning
+simple, genuine, personalized and dependable.
 </p>
 
 </div>
@@ -857,17 +1928,116 @@ simple, genuine and dependable.
 </section>
 
 
+<!-- FAQ -->
+
+<section
+style="background:#eef4ff">
+
+<div class="container faq">
+
+<div class="section-head">
+
+<h2>
+Frequently Asked Questions
+</h2>
+
+</div>
+
+
+<details>
+
+<summary>
+Can I customize my tour?
+</summary>
+
+<p>
+Yes. You can tell us your destination,
+travel dates, number of travellers,
+preferred accommodation and requirements.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Do you arrange honeymoon tours?
+</summary>
+
+<p>
+Yes. Honeymoon tours can be planned according
+to destination, duration, accommodation and
+couple preferences.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Do you arrange group tours?
+</summary>
+
+<p>
+Yes. We handle group travel requirements
+including customized itineraries and
+travel arrangements.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Do you arrange North Bengal offbeat tours?
+</summary>
+
+<p>
+Yes. Sarbojayi Tourism works with customized
+and group travel plans covering multiple
+North Bengal offbeat destinations.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+How do I contact Sarbojayi Tourism?
+</summary>
+
+<p>
+Call or WhatsApp us at
+<strong>8100360030</strong>.
+You can also use the enquiry form on this website.
+</p>
+
+</details>
+
+</div>
+
+</section>
+
+
 <!-- CONTACT -->
+
 <section>
 
 <div class="container">
 
 <div class="section-head">
 
-<h2>Contact Us</h2>
+<h2>
+Contact Sarbojayi Tourism
+</h2>
 
 <p>
-We are ready to help you plan your next journey.
+Ready to plan your next journey?
+Get in touch with our team.
 </p>
 
 </div>
@@ -875,12 +2045,23 @@ We are ready to help you plan your next journey.
 
 <div class="grid">
 
+
 <div class="card center">
 
-<h3>📞 Call & WhatsApp</h3>
+<div class="icon">
+📞
+</div>
 
-<a href="tel:+918100360030">
+<h3>
+Call & WhatsApp
+</h3>
+
+<a
+class="gold"
+href="tel:+918100360030">
+
 8100360030
+
 </a>
 
 </div>
@@ -888,7 +2069,13 @@ We are ready to help you plan your next journey.
 
 <div class="card center">
 
-<h3>☎️ Office</h3>
+<div class="icon">
+☎️
+</div>
+
+<h3>
+Office
+</h3>
 
 <p>
 033-35764303
@@ -899,7 +2086,13 @@ We are ready to help you plan your next journey.
 
 <div class="card center">
 
-<h3>🚨 Emergency Support</h3>
+<div class="icon">
+🚨
+</div>
+
+<h3>
+Emergency Support
+</h3>
 
 <p>
 8013967348
@@ -910,22 +2103,39 @@ We are ready to help you plan your next journey.
 
 <div class="card center">
 
-<h3>📧 Email</h3>
+<div class="icon">
+📧
+</div>
 
-<p>
+<h3>
+Email
+</h3>
+
+<a
+class="gold"
+href="mailto:sarbojayitourism@gmail.com">
+
 sarbojayitourism@gmail.com
-</p>
+
+</a>
 
 </div>
 
 
 <div class="card center">
 
-<h3>📍 Office</h3>
+<div class="icon">
+📍
+</div>
+
+<h3>
+Office Address
+</h3>
 
 <p>
-Narendra Pur, Kolkata - 700103,
-West Bengal
+SARBOJAYI GROUP<br>
+Narendra Pur, Kolkata - 700103<br>
+West Bengal, India
 </p>
 
 </div>
@@ -933,7 +2143,13 @@ West Bengal
 
 <div class="card center">
 
-<h3>🌐 Website</h3>
+<div class="icon">
+🌐
+</div>
+
+<h3>
+Website
+</h3>
 
 <p>
 www.sarbojayi.com
@@ -947,17 +2163,22 @@ www.sarbojayi.com
 
 </section>
 
+
 </main>
 
 
 <!-- FOOTER -->
+
 <footer>
 
 <div class="container footer-grid">
 
+
 <div>
 
-<h3>SARBOJAYI TOURISM</h3>
+<h3>
+SARBOJAYI TOURISM
+</h3>
 
 <p>
 A Unit of SARBOJAYI GROUP
@@ -967,39 +2188,100 @@ A Unit of SARBOJAYI GROUP
 Trusted Tour Operator
 </p>
 
-</div>
-
-
-<div>
-
-<h4>Services</h4>
-
-<a href="#services">Personal Tour</a>
-<a href="#services">Group Tour</a>
-<a href="#services">Honeymoon</a>
-<a href="#services">Corporate</a>
-<a href="#plan">Customized Tour</a>
+<p>
+Domestic • International • Group •
+Honeymoon • Corporate • Customized
+</p>
 
 </div>
 
 
 <div>
 
-<h4>Contact</h4>
+<h4>
+Services
+</h4>
+
+<a href="#services">
+Personal Tour
+</a>
+
+<a href="#services">
+Group Tour
+</a>
+
+<a href="#services">
+Honeymoon Tour
+</a>
+
+<a href="#services">
+Corporate Tour
+</a>
+
+<a href="#plan">
+Customized Tour
+</a>
+
+</div>
+
+
+<div>
+
+<h4>
+Destinations
+</h4>
+
+<a href="#northbengal">
+North Bengal
+</a>
+
+<a href="#destinations">
+Kashmir
+</a>
+
+<a href="#destinations">
+Manali
+</a>
+
+<a href="#destinations">
+Andaman
+</a>
+
+<a href="#destinations">
+International
+</a>
+
+</div>
+
+
+<div>
+
+<h4>
+Contact
+</h4>
 
 <a href="tel:+918100360030">
 8100360030
 </a>
 
-<a href="https://wa.me/918100360030">
+<a
+href="https://wa.me/918100360030"
+target="_blank">
 WhatsApp
 </a>
 
-<a href="mailto:sarbojayitourism@gmail.com">
+<a
+href="mailto:sarbojayitourism@gmail.com">
 Email Us
 </a>
 
+<p>
+Narendra Pur,
+Kolkata - 700103
+</p>
+
 </div>
+
 
 </div>
 
@@ -1019,21 +2301,23 @@ Email Us
 
 <a
 class="float-btn call"
-href="tel:+918100360030">
+href="tel:+918100360030"
+title="Call Sarbojayi Tourism">
 ☎
 </a>
 
 <a
 class="float-btn wa"
 href="https://wa.me/918100360030"
-target="_blank">
+target="_blank"
+title="WhatsApp Sarbojayi Tourism">
 ☘
 </a>
 
 </div>
 
 
-<!-- WELCOME -->
+<!-- WELCOME POPUP -->
 
 <div id="welcome">
 
@@ -1045,7 +2329,9 @@ onclick="closeWelcome()">
 ×
 </button>
 
-<h2>Welcome to Sarbojayi Tourism</h2>
+<h2>
+Welcome to Sarbojayi Tourism
+</h2>
 
 <p>
 How can we help you today?
@@ -1053,50 +2339,71 @@ How can we help you today?
 
 <div class="modal-grid">
 
-<div
-class="modal-option"
-onclick="go('services')">
-🏠 Domestic
-</div>
 
 <div
 class="modal-option"
-onclick="go('services')">
-🌎 International
+onclick="go('destinations')">
+
+🇮🇳<br>
+Domestic Tour
+
 </div>
+
+
+<div
+class="modal-option"
+onclick="go('destinations')">
+
+🌎<br>
+International Tour
+
+</div>
+
 
 <div
 class="modal-option"
 onclick="go('plan')">
-🧳 Customize
+
+🧳<br>
+Customize My Tour
+
 </div>
+
 
 </div>
 
 </div>
 
+</div>
+
+
+<div
+id="toast"
+class="toast">
+Destination selected
 </div>
 
 
 <script>
 
-/* LIVE CLOCK */
+
+/* LIVE DATE & TIME */
 
 function updateClock(){
 
- const now=new Date();
+const now=new Date();
 
- const options={
-  day:"2-digit",
-  month:"short",
-  year:"numeric",
-  hour:"2-digit",
-  minute:"2-digit",
-  second:"2-digit"
- };
+const options={
+day:"2-digit",
+month:"short",
+year:"numeric",
+hour:"2-digit",
+minute:"2-digit",
+second:"2-digit"
+};
 
- document.getElementById("liveClock").textContent=
- now.toLocaleString("en-IN",options);
+document.getElementById("liveClock").textContent=
+now.toLocaleString("en-IN",options);
 
 }
 
@@ -1105,57 +2412,206 @@ updateClock();
 setInterval(updateClock,1000);
 
 
-/* LANGUAGE */
+/* LANGUAGE SWITCH */
 
 function setLang(lang){
 
- document.getElementById("enBtn")
- .classList.toggle("active",lang==="en");
+document.getElementById("enBtn")
+.classList.toggle(
+"active",
+lang==="en"
+);
 
- document.getElementById("bnBtn")
- .classList.toggle("active",lang==="bn");
+document.getElementById("bnBtn")
+.classList.toggle(
+"active",
+lang==="bn"
+);
 
- if(lang==="bn"){
+if(lang==="bn"){
 
-  alert(
-  "বাংলা সংস্করণ ধীরে ধীরে যুক্ত করা হবে।"
-  );
+document.body.classList.add("bn");
 
- }
+showToast(
+"বাংলা সংস্করণ আরও বিস্তারিতভাবে যোগ করা হবে।"
+);
+
+}else{
+
+document.body.classList.remove("bn");
+
+showToast(
+"English version selected"
+);
+
+}
 
 }
 
 
-/* WELCOME POPUP */
+/* WELCOME */
 
-window.addEventListener("load",function(){
+window.addEventListener(
+"load",
+function(){
 
- setTimeout(function(){
+setTimeout(
+function(){
 
-  document.getElementById("welcome")
-  .style.display="flex";
+document.getElementById("welcome")
+.style.display="flex";
 
- },1200);
+},
+1000
+);
 
-});
+}
+);
 
 
 function closeWelcome(){
 
- document.getElementById("welcome")
- .style.display="none";
+document.getElementById("welcome")
+.style.display="none";
 
 }
 
 
 function go(id){
 
- closeWelcome();
+closeWelcome();
 
- document.getElementById(id)
- .scrollIntoView({
-  behavior:"smooth"
- });
+document.getElementById(id)
+.scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+
+/* DESTINATION SEARCH */
+
+const destinations=[
+
+{
+name:"North Bengal",
+details:"Darjeeling, Kalimpong, Lava, Rishop, Sittong and many offbeat destinations."
+},
+
+{
+name:"Darjeeling",
+details:"Himalayan town, tea gardens, Kanchenjunga views and sightseeing."
+},
+
+{
+name:"Kalimpong",
+details:"Peaceful hills, monasteries, nature and customized stays."
+},
+
+{
+name:"Lava",
+details:"Forests, monasteries and cool Himalayan surroundings."
+},
+
+{
+name:"Rishop",
+details:"Offbeat mountain destination with beautiful views."
+},
+
+{
+name:"Kashmir",
+details:"Srinagar, Gulmarg, Pahalgam, Sonamarg and Katra."
+},
+
+{
+name:"Manali",
+details:"Himachal mountain holidays, family and honeymoon tours."
+},
+
+{
+name:"Andaman",
+details:"Island holidays, beaches and sightseeing."
+},
+
+{
+name:"International",
+details:"Customized international travel planning."
+}
+
+];
+
+
+function searchDestination(){
+
+const input=
+document.getElementById(
+"destinationSearch"
+).value
+.toLowerCase()
+.trim();
+
+const results=
+document.getElementById(
+"searchResults"
+);
+
+if(!input){
+
+results.innerHTML="";
+return;
+
+}
+
+const matches=
+destinations.filter(
+d=>
+d.name.toLowerCase()
+.includes(input)
+);
+
+if(!matches.length){
+
+results.innerHTML=
+"<div class='result'>No destination found.</div>";
+
+return;
+
+}
+
+results.innerHTML=
+matches.map(
+d=>
+`
+<div
+class="result"
+onclick="selectDestination('${d.name}')">
+
+<strong>${d.name}</strong><br>
+
+<small>${d.details}</small>
+
+</div>
+`
+).join("");
+
+}
+
+
+function selectDestination(name){
+
+document.getElementById(
+"destination"
+).value=name;
+
+document.getElementById(
+"plan"
+).scrollIntoView({
+behavior:"smooth"
+});
+
+showToast(
+name+" selected for your tour enquiry"
+);
 
 }
 
@@ -1164,53 +2620,84 @@ function go(id){
 
 function sendPlan(e){
 
- e.preventDefault();
+e.preventDefault();
 
- const name=
- document.getElementById("name").value;
+const name=
+document.getElementById("name").value;
 
- const phone=
- document.getElementById("phone").value;
+const phone=
+document.getElementById("phone").value;
 
- const type=
- document.getElementById("type").value;
+const type=
+document.getElementById("type").value;
 
- const destination=
- document.getElementById("destination").value;
+const destination=
+document.getElementById("destination").value;
 
- const date=
- document.getElementById("date").value;
+const date=
+document.getElementById("date").value;
 
- const travellers=
- document.getElementById("travellers").value;
+const travellers=
+document.getElementById("travellers").value;
 
- const message=
- document.getElementById("message").value;
+const message=
+document.getElementById("message").value;
 
 
- const text=
- `Hello Sarbojayi Tourism,
+const text=
+`Hello Sarbojayi Tourism,
+
+I would like to enquire about a tour.
 
 Name: ${name}
+
 Phone: ${phone}
+
 Tour Type: ${type}
+
 Destination: ${destination}
+
 Travel Date: ${date}
+
 Travellers: ${travellers}
 
 Requirement:
 ${message}`;
 
 
- window.open(
- "https://wa.me/918100360030?text="+
- encodeURIComponent(text),
- "_blank"
- );
+window.open(
+"https://wa.me/918100360030?text="+
+encodeURIComponent(text),
+"_blank"
+);
+
+}
+
+
+/* TOAST */
+
+function showToast(message){
+
+const toast=
+document.getElementById("toast");
+
+toast.textContent=message;
+
+toast.classList.add("show");
+
+setTimeout(
+function(){
+
+toast.classList.remove("show");
+
+},
+2500
+);
 
 }
 
 </script>
+
 
 </body>
 </html>
